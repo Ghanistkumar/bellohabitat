@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-bg-primary: #FAF8F5;
+    --color-bg-secondary: #F4EFE6;
+    --color-bg-tertiary: #EBE4D5;
+    --color-dark: #151412;
+    --color-dark-surface: #1E1C19;
+    --color-dark-elevated: #282521;
+    --color-text-main: #22201D;
+    --color-text-muted: #6E675F;
+    --color-brass: #C09758;
+    --color-brass-light: #DFC493;
+    --color-brass-dark: #9A7436;
+    --color-terracotta: #A15538;
+    --color-walnut: #593C25;
+    --color-border: #E8E2D8;
+    --color-border-dark: #2F2B26;
+  }
+
+  body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-main);
+    font-family: 'Plus Jakarta Sans', 'DM Sans', system-ui, sans-serif;
+    letter-spacing: -0.01em;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.02em;
+  }
+
+  .font-display {
+    font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  }
+
+  .font-sans-ui {
+    font-family: 'Plus Jakarta Sans', 'DM Sans', sans-serif;
+  }
+}
+
+/* Custom subtle parchment texture & architectural grid */
+.bg-parchment-pattern {
+  background-image: 
+    radial-gradient(#C09758 0.6px, transparent 0.6px),
+    radial-gradient(#151412 0.35px, #FAF8F5 0.35px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+}
+
+.bg-dark-grid {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.bg-light-grid {
+  background-image: linear-gradient(to right, rgba(22, 20, 18, 0.04) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(22, 20, 18, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D8D0C2;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C09758;
+}
+
+/* Smooth reveal animation utilities */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Editorial line clamp & image filters */
+.editorial-image-warmth {
+  filter: contrast(102%) saturate(94%) brightness(99%);
+}
+
+.editorial-sepia-subtle {
+  filter: sepia(8%) contrast(101%);
+}

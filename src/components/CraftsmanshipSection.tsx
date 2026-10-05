@@ -33,7 +33,7 @@ export const CraftsmanshipSection: React.FC = () => {
 
         {/* Visual Sequence Flow Bar: RAW WOOD → DESIGN → CARVING → DETAIL → FINISH → SPACE */}
         <div className="mb-14 p-2 sm:p-3 bg-[#1E1B17] border border-[#332C22] overflow-x-auto scrollbar-none">
-          <div className="flex items-center justify-between min-w-[700px] text-[11px] font-mono tracking-widest uppercase">
+          <div className="flex items-center justify-between min-w-175 text-[11px] font-mono tracking-widest uppercase">
             {CRAFT_STAGES.map((stage, idx) => {
               const isActive = stage.id === activeStageId;
               return (
@@ -63,7 +63,7 @@ export const CraftsmanshipSection: React.FC = () => {
             {/* Visual Frame */}
             <div className="lg:col-span-6 relative">
               <div className="border border-[#4B4233] p-3 bg-[#131210]">
-                <div className="aspect-[4/3] overflow-hidden bg-[#24201B]">
+                <div className="aspect-4/3 overflow-hidden bg-[#24201B]">
                   <img
                     src={activeStage.image}
                     alt={activeStage.title}

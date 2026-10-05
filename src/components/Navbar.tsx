@@ -107,12 +107,15 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
       </div>
 
       {/* Main Sticky Navbar */}
-      <header
+      {/* <header
         className={`sticky top-0 z-40 transition-all duration-300 ${
           isScrolled
             ? 'bg-[#FAF8F5]/95 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.06)] border-b border-[#E6DFD3] py-3.5'
             : 'bg-[#FAF8F5] border-b border-[#EAE3D7] py-5'
         }`}
+      > */}
+      <header
+        className={`sticky top-0 z-40 transition-all duration-300 bg-[#FAF8F5]/95 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.06)] border-b border-[#E6DFD3] py-3.5`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between gap-2">
@@ -186,7 +189,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
 
         {/* Mobile Fullscreen / Drawer Menu */}
         {mobileMenuOpen && (
-          <div className="lg:hidden fixed inset-x-0 top-[calc(100%+1px)] h-[calc(100vh-100px)] bg-[#FAF8F5] border-b border-[#E6DFD3] z-50 overflow-y-auto px-6 py-8 flex flex-col justify-between shadow-2xl animate-fade-in">
+          <div className="lg:hidden fixed inset-x-0 top-[calc(100%)] h-[calc(100vh-100px)] bg-[#FAF8F5] border-b border-[#E6DFD3] z-50 overflow-y-auto px-6 py-8 flex flex-col justify-between shadow-2xl animate-fade-in">
             <div className="space-y-6">
               <div className="text-[10px] uppercase tracking-[0.24em] text-[#8E5832] font-semibold border-b border-[#E6DFD3] pb-2">
                 NAVIGATION • BELLO HABITAT & VASTUKALA

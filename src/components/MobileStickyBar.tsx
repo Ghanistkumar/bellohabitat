@@ -1,14 +1,16 @@
 import React from 'react';
 import { Phone, MessageSquare, ArrowUpRight } from 'lucide-react';
 
-
 interface MobileStickyBarProps {
   onOpenConsultation: () => void;
 }
 
 export const MobileStickyBar: React.FC<MobileStickyBarProps> = ({ onOpenConsultation }) => {
   return (
-    <div className="fixed bottom-0 inset-x-0 z-40 bg-[#181614]/95 backdrop-blur-md border-t border-[#312B23] p-2.5 sm:hidden flex items-center justify-between gap-2 shadow-2xl">
+    <div
+      style={{ paddingBottom: 'max(0.625rem, env(safe-area-inset-bottom, 0.625rem))' }}
+      className="fixed bottom-0 inset-x-0 z-40 bg-[#181614]/95 backdrop-blur-md border-t border-[#312B23] p-2.5 sm:hidden flex items-center justify-between gap-2 shadow-2xl"
+    >
       {/* Direct Phone Call */}
       <a
         href="tel:+918128194663"

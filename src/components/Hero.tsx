@@ -59,10 +59,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation, onExploreJourney
           </div>
 
           {/* Interactive Duality Switcher right in the Hero */}
-          <div className="inline-flex p-1 bg-black/60 backdrop-blur-md border border-white/20 rounded-none text-xs">
+          <div className="flex w-full sm:w-auto p-1 bg-black/60 backdrop-blur-md border border-white/20 rounded-none text-xs">
             <button
               onClick={() => setActiveVisualMode('architecture')}
-              className={`px-3 py-1.5 transition-all duration-300 flex items-center gap-1.5 cursor-pointer text-[10.5px] tracking-wider uppercase ${
+              className={`flex-1 sm:flex-none justify-center px-2.5 sm:px-3 py-1.5 transition-all duration-300 flex items-center gap-1.5 cursor-pointer text-[10px] sm:text-[10.5px] tracking-wider uppercase ${
                 activeVisualMode === 'architecture'
                   ? 'bg-[#C09758] text-[#151412] font-bold shadow-sm'
                   : 'text-white/70 hover:text-white'
@@ -73,7 +73,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation, onExploreJourney
             </button>
             <button
               onClick={() => setActiveVisualMode('woodcraft')}
-              className={`px-3 py-1.5 transition-all duration-300 flex items-center gap-1.5 cursor-pointer text-[10.5px] tracking-wider uppercase ${
+              className={`flex-1 sm:flex-none justify-center px-2.5 sm:px-3 py-1.5 transition-all duration-300 flex items-center gap-1.5 cursor-pointer text-[10px] sm:text-[10.5px] tracking-wider uppercase ${
                 activeVisualMode === 'woodcraft'
                   ? 'bg-[#C09758] text-[#151412] font-bold shadow-sm'
                   : 'text-white/70 hover:text-white'
@@ -87,33 +87,34 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation, onExploreJourney
       </div>
 
       {/* Center Cinematic Main Headline & Story Opening */}
-      <div className="relative z-10 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+      <div className="relative z-10 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-10 sm:py-20 lg:py-24">
         <div className="max-w-4xl">
           {/* Subtle category eyebrow */}
-          <div className="inline-flex items-center gap-2 mb-6 px-3 py-1 bg-[#181614]/80 backdrop-blur-md border border-[#C09758]/40 text-[#DFC493] text-[11px] tracking-[0.28em] uppercase font-mono">
+          <div className="inline-flex flex-wrap items-center gap-1.5 sm:gap-2 mb-4 sm:mb-6 px-2.5 sm:px-3 py-1 bg-[#181614]/80 backdrop-blur-md border border-[#C09758]/40 text-[#DFC493] text-[10px] sm:text-[11px] tracking-[0.2em] sm:tracking-[0.28em] uppercase font-mono">
             <span>{currentMode.tag}</span>
             <span className="text-[#C09758]">•</span>
             <span className="text-white/80">{currentMode.focus}</span>
           </div>
 
           {/* Core Headline */}
-          <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-normal leading-[1.05] tracking-tight text-[#FAF8F5] mb-8">
+          <h1 className="font-serif text-3xl sm:text-6xl md:text-7xl lg:text-8xl font-normal leading-[1.08] tracking-tight text-[#FAF8F5] mb-6 sm:mb-8">
             CRAFTING SPACES.
             <br />
             <span className="italic font-light text-[#DFC493]">PRESERVING LEGACY.</span>
           </h1>
 
           {/* Supporting Text */}
-          <p className="text-base sm:text-xl md:text-2xl text-[#D8D0C2] font-light leading-relaxed max-w-2xl mb-10 font-sans-ui">
+          <p className="text-sm sm:text-xl md:text-2xl text-[#D8D0C2] font-light leading-relaxed max-w-2xl mb-8 sm:mb-10 font-sans-ui">
             Where traditional Indian craftsmanship meets contemporary architecture, interiors and thoughtful design.
           </p>
 
           {/* Action CTAs */}
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-6 pt-2">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-6 pt-2">
             <button
               onClick={onOpenConsultation}
-              className="inline-flex items-center justify-center px-8 py-4 bg-[#C09758] hover:bg-[#D4AF37] text-[#151412] font-bold text-xs sm:text-sm tracking-[0.22em] uppercase transition-all duration-300 shadow-lg shadow-black/40 group cursor-pointer"
+              className="inline-flex items-center justify-center px-6 sm:px-8 py-3.5 sm:py-4 bg-[#C09758] hover:bg-[#D4AF37] text-[#151412] font-bold text-xs sm:text-sm tracking-[0.2em] sm:tracking-[0.22em] uppercase transition-all duration-300 shadow-lg shadow-black/40 group cursor-pointer w-full sm:w-auto"
             >
+
               <span>BOOK A CONSULTATION</span>
               <ArrowUpRight className="w-4 h-4 ml-2 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </button>

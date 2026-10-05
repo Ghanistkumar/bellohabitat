@@ -18,6 +18,16 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
 
   const activeService: ServiceItem = SERVICES_DATA.find(s => s.id === selectedServiceId) || SERVICES_DATA[0];
 
+  const handleServiceClick = (id: string) => {
+    setSelectedServiceId(id);
+    if (typeof window !== 'undefined' && window.innerWidth < 1024) {
+      const el = document.getElementById('service-inspector');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  };
+
   return (
     <section id="services" className="py-24 sm:py-32 bg-[#F6F2EB] text-[#181614] relative border-b border-[#E5DDD0]">
       {/* Background Subtle Paper Texture */}
@@ -42,7 +52,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
           <div className="inline-flex p-1 bg-[#EAE2D4] border border-[#D3C8B7] self-start md:self-auto overflow-x-auto max-w-full">
             <button
               onClick={() => setActiveCategory('all')}
-              className={`px-4 py-2 text-xs font-semibold tracking-wider uppercase transition-all whitespace-nowrap cursor-pointer ${
+              className={`px-3 sm:px-4 py-2 text-[11px] sm:text-xs font-semibold tracking-wider uppercase transition-all whitespace-nowrap cursor-pointer ${
                 activeCategory === 'all'
                   ? 'bg-[#181614] text-[#FAF8F5]'
                   : 'text-[#61584C] hover:text-[#181614]'
@@ -52,7 +62,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
             </button>
             <button
               onClick={() => setActiveCategory('bello')}
-              className={`px-4 py-2 text-xs font-semibold tracking-wider uppercase transition-all whitespace-nowrap cursor-pointer ${
+              className={`px-3 sm:px-4 py-2 text-[11px] sm:text-xs font-semibold tracking-wider uppercase transition-all whitespace-nowrap cursor-pointer ${
                 activeCategory === 'bello'
                   ? 'bg-[#181614] text-[#FAF8F5]'
                   : 'text-[#61584C] hover:text-[#181614]'
@@ -62,7 +72,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
             </button>
             <button
               onClick={() => setActiveCategory('vastukala')}
-              className={`px-4 py-2 text-xs font-semibold tracking-wider uppercase transition-all whitespace-nowrap cursor-pointer ${
+              className={`px-3 sm:px-4 py-2 text-[11px] sm:text-xs font-semibold tracking-wider uppercase transition-all whitespace-nowrap cursor-pointer ${
                 activeCategory === 'vastukala'
                   ? 'bg-[#181614] text-[#FAF8F5]'
                   : 'text-[#61584C] hover:text-[#181614]'
@@ -76,14 +86,14 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
         {/* Dynamic Editorial Layout: Left Interactive Service Catalog + Right Active Feature Inspector */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left Column: Interactive Service List */}
-          <div className="lg:col-span-6 space-y-3 max-h-[750px] overflow-y-auto pr-1">
+          <div className="lg:col-span-6 space-y-3 max-h-[500px] sm:max-h-[600px] lg:max-h-[750px] overflow-y-auto pr-1">
             {filteredServices.map((service, idx) => {
               const isSelected = service.id === selectedServiceId;
               return (
                 <div
                   key={service.id}
                   onMouseEnter={() => setSelectedServiceId(service.id)}
-                  onClick={() => setSelectedServiceId(service.id)}
+                  onClick={() => handleServiceClick(service.id)}
                   className={`p-4 sm:p-5 border transition-all duration-300 cursor-pointer ${
                     isSelected
                       ? 'bg-white border-[#181614] shadow-md translate-x-1.5'
@@ -123,10 +133,11 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
           </div>
 
           {/* Right Column: Active Service Visual & Specification Inspector */}
-          <div className="lg:col-span-6 lg:sticky lg:top-28">
-            <div className="bg-[#181614] text-[#FAF8F5] border border-[#2F2922] p-6 sm:p-8 shadow-2xl relative">
+          <div id="service-inspector" className="lg:col-span-6 lg:sticky lg:top-28">
+            <div className="bg-[#181614] text-[#FAF8F5] border border-[#2F2922] p-5 sm:p-8 shadow-2xl relative">
               {/* Active Image Showcase */}
               <div className="relative aspect-[16/10] overflow-hidden bg-[#24201B] border border-[#3E362C] mb-6">
+
                 <img
                   src={activeService.image}
                   alt={activeService.name}

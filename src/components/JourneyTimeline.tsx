@@ -46,8 +46,9 @@ export const JourneyTimeline: React.FC = () => {
         </div>
 
         {/* Narrative Flow Bar: CRAFT → LEGACY → EVOLUTION → DESIGN → CRAFTSMANSHIP → PROJECTS → FUTURE */}
-        <div className="mb-10 p-3 sm:p-4 bg-[#201D1A] border border-[#332D24] overflow-x-auto scrollbar-none">
-          <div className="flex items-center justify-between min-w-[680px] text-[10px] sm:text-[11px] font-mono uppercase tracking-[0.18em]">
+        <div className="mb-8 sm:mb-10 p-2 sm:p-4 bg-[#201D1A] border border-[#332D24] overflow-x-auto scrollbar-none">
+          <div className="flex items-center justify-between min-w-[640px] text-[10px] sm:text-[11px] font-mono uppercase tracking-[0.16em]">
+
             {[
               "01 CRAFT",
               "02 LEGACY",

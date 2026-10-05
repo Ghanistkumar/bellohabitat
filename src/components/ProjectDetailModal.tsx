@@ -29,31 +29,32 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-6 lg:p-10 animate-fade-in">
-      <div className="bg-[#FAF8F5] text-[#181614] w-full max-w-5xl max-h-[92vh] overflow-y-auto shadow-2xl border border-[#DFCBB0] relative">
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/85 backdrop-blur-md flex items-center justify-center p-2 sm:p-6 lg:p-10 animate-fade-in">
+      <div className="bg-[#FAF8F5] text-[#181614] w-full max-w-5xl max-h-[95vh] sm:max-h-[92vh] overflow-y-auto shadow-2xl border border-[#DFCBB0] relative">
         {/* Sticky Header Bar */}
-        <div className="sticky top-0 z-30 bg-[#FAF8F5]/95 backdrop-blur-md border-b border-[#E7DFD1] px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <span className="w-2.5 h-2.5 bg-[#C09758] rounded-full"></span>
-            <span className="text-[11px] font-mono uppercase tracking-[0.22em] text-[#8E5832] font-semibold">
+        <div className="sticky top-0 z-30 bg-[#FAF8F5]/95 backdrop-blur-md border-b border-[#E7DFD1] px-4 sm:px-6 py-3.5 sm:py-4 flex items-center justify-between">
+          <div className="flex items-center gap-2.5 sm:gap-3">
+            <span className="w-2 sm:w-2.5 h-2 sm:h-2.5 bg-[#C09758] rounded-full"></span>
+            <span className="text-[10px] sm:text-[11px] font-mono uppercase tracking-[0.18em] sm:tracking-[0.22em] text-[#8E5832] font-semibold truncate max-w-[240px] sm:max-w-none">
               {project.categoryLabel} • {project.division}
             </span>
           </div>
 
           <button
             onClick={onClose}
-            className="p-2 text-[#181614] hover:text-[#8E5832] hover:bg-[#EFE8DC] transition-colors rounded-none cursor-pointer"
+            className="p-1.5 sm:p-2 text-[#181614] hover:text-[#8E5832] hover:bg-[#EFE8DC] transition-colors rounded-none cursor-pointer"
             aria-label="Close Project Detail Modal"
           >
-            <X className="w-6 h-6" />
+            <X className="w-5 h-5 sm:w-6 sm:h-6" />
           </button>
         </div>
 
         {/* Modal Main Content */}
-        <div className="p-6 sm:p-10 lg:p-12 space-y-10">
+        <div className="p-4 sm:p-10 lg:p-12 space-y-8 sm:space-y-10">
           {/* Project Title & Metadata Bar */}
           <div>
-            <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-[#7D7365] mb-3">
+            <div className="flex flex-wrap items-center gap-2.5 sm:gap-4 text-xs font-mono text-[#7D7365] mb-2 sm:mb-3">
+
               <span className="flex items-center gap-1.5">
                 <MapPin className="w-3.5 h-3.5 text-[#C09758]" />
                 {project.location}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Menu, X, Phone, ArrowUpRight, Compass, ShieldCheck } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
 import { COMPANY_INFO } from '../data/siteData';
@@ -17,22 +17,22 @@ const PAGE_ROUTES: Record<string, string> = {
 };
 
 export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  // const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
   const isHomePage = location.pathname === '/';
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 40) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 40) {
+  //       setIsScrolled(true);
+  //     } else {
+  //       setIsScrolled(false);
+  //     }
+  //   };
+  //   window.addEventListener('scroll', handleScroll, { passive: true });
+  //   return () => window.removeEventListener('scroll', handleScroll);
+  // }, []);
 
   const navLinks = [
     { label: 'HOME', href: '#hero' },

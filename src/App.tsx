@@ -12,7 +12,7 @@ import { ProjectDetailModal } from './components/ProjectDetailModal';
 import { ProcessSection } from './components/ProcessSection';
 import { WhyUsSection } from './components/WhyUsSection';
 import { TestimonialsSection } from './components/TestimonialsSection';
-import { AppointmentSection } from './components/AppointmentSection';
+// import { AppointmentSection } from './components/AppointmentSection';
 // import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { MobileStickyBar } from './components/MobileStickyBar';

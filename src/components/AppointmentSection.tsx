@@ -132,7 +132,7 @@ END:VCALENDAR`;
         {/* Section Header */}
         <div className="max-w-3xl mb-12 sm:mb-16">
           <div className="flex items-center gap-3 mb-3">
-            <span className="w-8 h-[1px] bg-[#C09758]"></span>
+            <span className="w-8 h-px bg-[#C09758]"></span>
             <span className="text-xs uppercase tracking-[0.28em] text-[#DFC493] font-mono">
               APPOINTMENT & SPATIAL DIALOGUE
             </span>

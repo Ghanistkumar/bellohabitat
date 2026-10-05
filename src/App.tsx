@@ -4,16 +4,16 @@ import { Hero } from './components/Hero';
 import { IntroSection } from './components/IntroSection';
 import { JourneyTimeline } from './components/JourneyTimeline';
 import { BrandDuality } from './components/BrandDuality';
-import { ServicesSection } from './components/ServicesSection';
-import { CraftsmanshipSection } from './components/CraftsmanshipSection';
+// import { ServicesSection } from './components/ServicesSection';
+// import { CraftsmanshipSection } from './components/CraftsmanshipSection';
 import { DesignPhilosophy } from './components/DesignPhilosophy';
-import { ProjectsGrid } from './components/ProjectsGrid';
+// import { ProjectsGrid } from './components/ProjectsGrid';
 import { ProjectDetailModal } from './components/ProjectDetailModal';
 import { ProcessSection } from './components/ProcessSection';
 import { WhyUsSection } from './components/WhyUsSection';
 import { TestimonialsSection } from './components/TestimonialsSection';
 import { AppointmentSection } from './components/AppointmentSection';
-import { ContactSection } from './components/ContactSection';
+// import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { MobileStickyBar } from './components/MobileStickyBar';
 import { AppointmentModal } from './components/AppointmentModal';
@@ -60,10 +60,10 @@ export function App() {
     }
   };
 
-  const handleSelectServiceForConsultation = (serviceName: string) => {
-    setPrefilledServiceOrProject(serviceName);
-    setIsConsultationModalOpen(true);
-  };
+  // const handleSelectServiceForConsultation = (serviceName: string) => {
+  //   setPrefilledServiceOrProject(serviceName);
+  //   setIsConsultationModalOpen(true);
+  // };
 
   const handleStartProjectWithUs = (projectTitle: string) => {
     setPrefilledServiceOrProject(`Commission Inquiry: ${projectTitle}`);
@@ -94,20 +94,20 @@ export function App() {
       <BrandDuality />
 
       {/* 6. SERVICES (WHAT WE CREATE) */}
-      <ServicesSection
+      {/* <ServicesSection
         onSelectServiceForConsultation={handleSelectServiceForConsultation}
-      />
+      /> */}
 
       {/* 7. CRAFTSMANSHIP (THE ART OF MAKING) */}
-      <CraftsmanshipSection />
+      {/* <CraftsmanshipSection /> */}
 
       {/* 8. DESIGN PHILOSOPHY */}
       <DesignPhilosophy />
 
       {/* 9. FEATURED PROJECTS / PORTFOLIO */}
-      <ProjectsGrid
+      {/* <ProjectsGrid
         onSelectProject={(project) => setSelectedProject(project)}
-      />
+      /> */}
 
       {/* 10. ARCHITECTURAL PROCESS */}
       <ProcessSection />
@@ -119,14 +119,14 @@ export function App() {
       <TestimonialsSection />
 
       {/* 13. BOOK A CONSULTATION APPOINTMENT SECTION */}
-      <AppointmentSection
+      {/* <AppointmentSection
         prefilledProjectType={prefilledServiceOrProject}
-      />
+      /> */}
 
       {/* 14. CONTACT SECTION */}
-      <ContactSection
+      {/* <ContactSection
         onOpenConsultation={() => handleOpenConsultation()}
-      />
+      /> */}
 
       {/* 15. FOOTER */}
       <Footer

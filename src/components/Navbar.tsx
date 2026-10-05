@@ -1,14 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone, ArrowUpRight, Compass, ShieldCheck } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
 import { COMPANY_INFO } from '../data/siteData';
 
 interface NavbarProps {
   onOpenConsultation: (projectType?: string) => void;
 }
 
+// Links that should open as dedicated route pages (in a new tab from homepage)
+const PAGE_ROUTES: Record<string, string> = {
+  SERVICES: '/services',
+  CRAFTSMANSHIP: '/craftsmanship',
+  PROJECTS: '/projects',
+  CONTACT: '/contact',
+  APPOINTMENT: 'appointent'
+};
+
 export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,9 +44,34 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
     { label: 'CONTACT', href: '#contact' },
   ];
 
-  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault();
+  const getLinkHref = (label: string, href: string): string => {
+    if (PAGE_ROUTES[label]) return PAGE_ROUTES[label];
+    return href;
+  };
+
+  const getLinkTarget = (label: string): string | undefined => {
+    // Open in new tab only from the homepage
+    if (PAGE_ROUTES[label] && isHomePage) return '_blank';
+    return undefined;
+  };
+
+  const handleLinkClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    label: string,
+    href: string
+  ) => {
     setMobileMenuOpen(false);
+
+    // If this is a page-route link, let the browser handle it (new tab or navigation)
+    if (PAGE_ROUTES[label]) return;
+
+    // Otherwise it's a hash-scroll link — only works on homepage
+    e.preventDefault();
+    if (!isHomePage) {
+      // Navigate home first, then scroll
+      window.location.href = '/' + href;
+      return;
+    }
     const element = document.querySelector(href);
     if (element) {
       const navOffset = 90;
@@ -78,11 +115,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between gap-2">
             {/* Brand Logo & Craft Division Mark */}
             <a 
-              href="#hero" 
-              onClick={(e) => handleLinkClick(e, '#hero')}
+              href={isHomePage ? '#hero' : '/'}
+              onClick={(e) => { if (isHomePage) handleLinkClick(e, 'HOME', '#hero'); }}
               className="flex items-center gap-3.5 group text-left cursor-pointer"
             >
               <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-none border border-[#C09758] bg-[#181614] flex items-center justify-center text-[#D8B57D] shadow-sm transition-transform duration-300 group-hover:scale-105">
@@ -105,8 +142,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
               {navLinks.map((link) => (
                 <a
                   key={link.label}
-                  href={link.href}
-                  onClick={(e) => handleLinkClick(e, link.href)}
+                  href={getLinkHref(link.label, link.href)}
+                  target={getLinkTarget(link.label)}
+                  rel={getLinkTarget(link.label) ? 'noopener noreferrer' : undefined}
+                  onClick={(e) => handleLinkClick(e, link.label, link.href)}
                   className="text-[12.5px] font-medium tracking-[0.16em] text-[#403B34] hover:text-[#8E5832] relative py-1 transition-colors group cursor-pointer"
                 >
                   {link.label}
@@ -156,8 +195,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
                 {navLinks.map((link, idx) => (
                   <a
                     key={link.label}
-                    href={link.href}
-                    onClick={(e) => handleLinkClick(e, link.href)}
+                    href={getLinkHref(link.label, link.href)}
+                    target={getLinkTarget(link.label)}
+                    rel={getLinkTarget(link.label) ? 'noopener noreferrer' : undefined}
+                    onClick={(e) => handleLinkClick(e, link.label, link.href)}
                     className="text-lg font-serif text-[#181614] hover:text-[#8E5832] flex items-center justify-between border-b border-[#EFE9DF] pb-3"
                   >
                     <span>{link.label}</span>

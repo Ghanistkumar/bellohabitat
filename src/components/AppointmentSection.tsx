@@ -103,7 +103,7 @@ UID:${bookingRef}@bellohc.com
 DTSTAMP:${new Date().toISOString().replace(/[-:]/g, '').split('.')[0]}Z
 DTSTART:${formData.preferredDate.replace(/-/g, '')}T050000Z
 DTEND:${formData.preferredDate.replace(/-/g, '')}T060000Z
-SUMMARY:Consultation: Bello Habitat & Vastukala (${formData.projectType})
+SUMMARY:Consultation: Bello Habitat & Vaastukalaa (${formData.projectType})
 DESCRIPTION:Consultation with Bello Habitat Consultancy for ${formData.fullName} (${formData.projectType}). Reference: ${bookingRef}
 LOCATION:306, Ishaan Square, Tapovan Circle, Chandkheda, Ahmedabad
 STATUS:CONFIRMED

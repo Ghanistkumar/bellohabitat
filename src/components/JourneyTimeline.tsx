@@ -52,7 +52,7 @@ export const JourneyTimeline: React.FC = () => {
             {[
               "01 CRAFT",
               "02 LEGACY",
-              "03 VASTUKALA",
+              "03 Vaastukalaa",
               "04 EVOLUTION",
               "05 BELLO HABITAT",
               "06 TODAY",

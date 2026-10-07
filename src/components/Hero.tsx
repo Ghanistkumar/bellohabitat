@@ -19,7 +19,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation, onExploreJourney
       focus: "Spatial Flow • Minimalist Form • Vastu Geometry"
     },
     woodcraft: {
-      tag: "VASTUKALA HAND-CARVED WOODCRAFT",
+      tag: "Vaastukalaa HAND-CARVED WOODCRAFT",
       image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=2000&q=85",
       caption: "Seasoned CP Teakwood hand-carved in our Nana Chiloda atelier using 45+ years of traditional Gujarati woodcraft lineage.",
       focus: "Aged Teak • Classical Chisels • Sangeda Woodturning"
@@ -50,7 +50,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation, onExploreJourney
           <div className="flex items-center gap-3">
             <span className="w-2 h-2 bg-[#C09758] rounded-full"></span>
             <span className="text-[11px] uppercase tracking-[0.24em] text-[#DFC493] font-semibold">
-              BELLO HABITAT & VASTUKALA • AHMEDABAD
+              BELLO HABITAT & Vaastukalaa • AHMEDABAD
             </span>
             <span className="hidden md:inline text-white/30">|</span>
             <span className="hidden md:inline text-[11px] text-[#A69E92] tracking-wider">
@@ -80,7 +80,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation, onExploreJourney
               }`}
             >
               <Sparkles className="w-3 h-3" />
-              <span>Vastukala Woodcraft</span>
+              <span>Vaastukalaa Woodcraft</span>
             </button>
           </div>
         </div>

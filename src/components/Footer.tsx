@@ -62,7 +62,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
                   BELLO HABITAT
                 </span>
                 <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-[#DFC493]">
-                  CONSULTANCY • VASTUKALA
+                  CONSULTANCY • Vaastukalaa
                 </span>
               </div>
             </div>
@@ -111,10 +111,10 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
             </ul>
           </div>
 
-          {/* Vastukala Woodcraft Division */}
+          {/* Vaastukalaa Woodcraft Division */}
           <div className="lg:col-span-3">
             <span className="text-[11px] font-mono uppercase tracking-[0.24em] text-[#C09758] block mb-4">
-              VASTUKALA ATELIER
+              Vaastukalaa ATELIER
             </span>
             <ul className="space-y-2.5 text-xs text-[#CDC3B3]">
               <li>Traditional Temples & Mandirs</li>
@@ -131,7 +131,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
         {/* Bottom Strip */}
         <div className="mt-16 pt-8 border-t border-[#26211A] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#7A7061]">
           <div>
-            © {new Date().getFullYear()} Bello Habitat Consultancy & Vastukala. All rights reserved.
+            © {new Date().getFullYear()} Bello Habitat Consultancy & Vaastukalaa. All rights reserved.
           </div>
 
           <div className="flex items-center gap-6">
@@ -187,7 +187,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
               ) : (
                 <>
                   <p>
-                    All architectural concepts, custom woodworking designs, technical blueprints, and website content are proprietary to Bello Habitat Consultancy and the Vastukala craft atelier.
+                    All architectural concepts, custom woodworking designs, technical blueprints, and website content are proprietary to Bello Habitat Consultancy and the Vaastukalaa craft atelier.
                   </p>
                   <p>
                     All architectural commissions and bespoke woodworking orders are governed by written contracts, project milestone schedules, and PMC agreements executed directly between Bello Habitat Consultancy and the commissioning patron.

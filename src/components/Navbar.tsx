@@ -93,7 +93,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
             <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#C09758] animate-pulse"></span>
             <span>AHMEDABAD, GUJARAT</span>
             <span className="text-[#645B4E]">•</span>
-            <span className="text-[#C5BBAE] font-normal">ARCHITECTURE & VASTUKALA WOODCRAFT ATELIER</span>
+            <span className="text-[#C5BBAE] font-normal">ARCHITECTURE & Vaastukalaa WOODCRAFT ATELIER</span>
           </div>
           <div className="hidden sm:flex items-center gap-4 text-[#C5BBAE] text-[11px] tracking-widest">
             <a href="tel:+918128194663" className="hover:text-[#D8B57D] transition-colors flex items-center gap-1.5">
@@ -135,7 +135,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
                 <div className="flex items-center gap-1.5 text-[9.5px] sm:text-[10px] tracking-[0.24em] uppercase text-[#736A5E] font-medium">
                   <span>CONSULTANCY</span>
                   <span className="text-[#C09758] font-bold">•</span>
-                  <span className="text-[#8E5832] font-semibold">VASTUKALA</span>
+                  <span className="text-[#8E5832] font-semibold">Vaastukalaa</span>
                 </div>
               </div>
             </a>
@@ -192,7 +192,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
           <div className="lg:hidden fixed inset-x-0 top-[calc(100%)] h-[calc(100vh-100px)] bg-[#FAF8F5] border-b border-[#E6DFD3] z-50 overflow-y-auto px-6 py-8 flex flex-col justify-between shadow-2xl animate-fade-in">
             <div className="space-y-6">
               <div className="text-[10px] uppercase tracking-[0.24em] text-[#8E5832] font-semibold border-b border-[#E6DFD3] pb-2">
-                NAVIGATION • BELLO HABITAT & VASTUKALA
+                NAVIGATION • BELLO HABITAT & Vaastukalaa
               </div>
               <div className="flex flex-col space-y-4">
                 {navLinks.map((link, idx) => (

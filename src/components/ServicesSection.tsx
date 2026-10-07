@@ -8,7 +8,7 @@ interface ServicesSectionProps {
 }
 
 export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServiceForConsultation }) => {
-  const [activeCategory, setActiveCategory] = useState<'all' | 'bello' | 'vastukala'>('all');
+  const [activeCategory, setActiveCategory] = useState<'all' | 'bello' | 'Vaastukalaa'>('all');
   const [selectedServiceId, setSelectedServiceId] = useState<string>(SERVICES_DATA[0].id);
 
   const filteredServices = SERVICES_DATA.filter(service => {
@@ -71,14 +71,14 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
               Bello Habitat (Architecture)
             </button>
             <button
-              onClick={() => setActiveCategory('vastukala')}
+              onClick={() => setActiveCategory('Vaastukalaa')}
               className={`px-3 sm:px-4 py-2 text-[11px] sm:text-xs font-semibold tracking-wider uppercase transition-all whitespace-nowrap cursor-pointer ${
-                activeCategory === 'vastukala'
+                activeCategory === 'Vaastukalaa'
                   ? 'bg-[#181614] text-[#FAF8F5]'
                   : 'text-[#61584C] hover:text-[#181614]'
               }`}
             >
-              Vastukala (Woodcraft)
+              Vaastukalaa (Woodcraft)
             </button>
           </div>
         </div>
@@ -118,7 +118,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                             : 'bg-[#C09758]/20 text-[#8E5832] font-bold'
                         }`}
                       >
-                        {service.division === 'bello' ? 'Architecture' : 'Vastukala Craft'}
+                        {service.division === 'bello' ? 'Architecture' : 'Vaastukalaa Craft'}
                       </span>
                       <Eye className={`w-4 h-4 transition-colors ${isSelected ? 'text-[#8E5832]' : 'text-[#AFA699]'}`} />
                     </div>

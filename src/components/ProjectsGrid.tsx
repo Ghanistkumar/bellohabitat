@@ -154,7 +154,7 @@ export const ProjectsGrid: React.FC<ProjectsGridProps> = ({ onSelectProject }) =
         {/* Footnote Disclosing Editorial Project Studies */}
         <div className="mt-14 p-5 bg-[#F2ECE0] border border-[#DFCBB0] text-center">
           <p className="text-xs text-[#7A7061] italic font-sans-ui">
-            * Selected works showcase actual spatial studies, traditional wood carving typologies, and architectural frameworks developed by Bello Habitat Consultancy and the Vastukala craft atelier.
+            * Selected works showcase actual spatial studies, traditional wood carving typologies, and architectural frameworks developed by Bello Habitat Consultancy and the Vaastukalaa craft atelier.
           </p>
         </div>
       </div>

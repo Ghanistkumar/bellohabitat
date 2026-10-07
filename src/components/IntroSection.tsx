@@ -33,13 +33,13 @@ export const IntroSection: React.FC<IntroSectionProps> = ({ onOpenConsultation, 
 
             <div className="space-y-6 text-[#4A443C] text-base sm:text-lg leading-relaxed font-sans-ui font-light">
               <p className="first-letter:text-5xl first-letter:font-serif first-letter:text-[#181614] first-letter:float-left first-letter:mr-3 first-letter:leading-none">
-                Bello Habitat Consultancy is the modern architectural consultancy carrying forward the generational experience, woodworking discipline, and cultural heritage of <strong className="font-semibold text-[#181614]">Vastukala</strong>.
+                Bello Habitat Consultancy is the modern architectural consultancy carrying forward the generational experience, woodworking discipline, and cultural heritage of <strong className="font-semibold text-[#181614]">Vaastukalaa</strong>.
               </p>
               <p>
                 Rooted in Ahmedabad, Gujarat, our practice bridges the historic divide between sacred Indian artisans and contemporary architectural masters. We believe that true luxury is not found in sterile mass-produced finishes, but in the tactile depth of seasoned teak, the spatial harmony of Vastu Shastra, and the unyielding precision of modern project management.
               </p>
               <p className="text-sm sm:text-base text-[#6E6457]">
-                Today, our practice provides comprehensive <span className="text-[#181614] font-medium">Architecture Consultancy</span>, <span className="text-[#181614] font-medium">Interior Design</span>, <span className="text-[#181614] font-medium">Landscape Design</span>, <span className="text-[#181614] font-medium">Vastu Consultancy</span>, and end-to-end <span className="text-[#181614] font-medium">Project Management Consultancy (PMC)</span>, complemented by our dedicated Vastukala woodworking atelier.
+                Today, our practice provides comprehensive <span className="text-[#181614] font-medium">Architecture Consultancy</span>, <span className="text-[#181614] font-medium">Interior Design</span>, <span className="text-[#181614] font-medium">Landscape Design</span>, <span className="text-[#181614] font-medium">Vastu Consultancy</span>, and end-to-end <span className="text-[#181614] font-medium">Project Management Consultancy (PMC)</span>, complemented by our dedicated Vaastukalaa woodworking atelier.
               </p>
             </div>
 

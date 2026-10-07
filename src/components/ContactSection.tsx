@@ -139,7 +139,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenConsultati
                       WOODWORKING ATELIER
                     </span>
                     <h3 className="font-serif text-2xl font-bold text-[#FAF8F5]">
-                      Vastukala Craft Atelier
+                      Vaastukalaa Craft Atelier
                     </h3>
                   </div>
                 </div>

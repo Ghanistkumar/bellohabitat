@@ -3,7 +3,7 @@ import { ArrowLeftRight, Compass, Building2, Hammer } from 'lucide-react';
 
 
 export const BrandDuality: React.FC = () => {
-  const [activeSide, setActiveSide] = useState<'both' | 'bello' | 'vastukala'>('both');
+  const [activeSide, setActiveSide] = useState<'both' | 'bello' | 'Vaastukalaa'>('both');
 
   return (
     <section className="py-24 sm:py-32 bg-[#FAF8F5] relative border-b border-[#EBE3D5] overflow-hidden">
@@ -47,12 +47,12 @@ export const BrandDuality: React.FC = () => {
               Bello Habitat (Architecture)
             </button>
             <button
-              onClick={() => setActiveSide('vastukala')}
+              onClick={() => setActiveSide('Vaastukalaa')}
               className={`px-4 py-2 text-xs font-semibold tracking-wider uppercase transition-all ${
-                activeSide === 'vastukala' ? 'bg-[#181614] text-[#FAF8F5]' : 'text-[#62594D] hover:text-[#181614]'
+                activeSide === 'Vaastukalaa' ? 'bg-[#181614] text-[#FAF8F5]' : 'text-[#62594D] hover:text-[#181614]'
               }`}
             >
-              Vastukala (Woodcraft Atelier)
+              Vaastukalaa (Woodcraft Atelier)
             </button>
           </div>
         </div>
@@ -62,7 +62,7 @@ export const BrandDuality: React.FC = () => {
           {/* LEFT: Bello Habitat Consultancy */}
           <div
             className={`lg:col-span-6 bg-white border border-[#DDD5C7] p-8 sm:p-10 flex flex-col justify-between shadow-md transition-all duration-500 ${
-              activeSide === 'vastukala' ? 'opacity-40 grayscale-[40%]' : 'opacity-100'
+              activeSide === 'Vaastukalaa' ? 'opacity-40 grayscale-[40%]' : 'opacity-100'
             }`}
           >
             <div>
@@ -121,7 +121,7 @@ export const BrandDuality: React.FC = () => {
             </div>
           </div>
 
-          {/* RIGHT: Vastukala */}
+          {/* RIGHT: Vaastukalaa */}
           <div
             className={`lg:col-span-6 bg-[#211E1A] text-[#FAF8F5] border border-[#3A3329] p-8 sm:p-10 flex flex-col justify-between shadow-md transition-all duration-500 ${
               activeSide === 'bello' ? 'opacity-40 grayscale-[40%]' : 'opacity-100'
@@ -138,7 +138,7 @@ export const BrandDuality: React.FC = () => {
                       CRAFT DIVISION & ATELIER
                     </span>
                     <h3 className="font-serif text-2xl font-bold text-[#FAF8F5]">
-                      VASTUKALA
+                      Vaastukalaa
                     </h3>
                   </div>
                 </div>
@@ -182,7 +182,7 @@ export const BrandDuality: React.FC = () => {
             "When modern architecture is grounded by the weight of authentic hand-carved wood, a house ceases to be just an address—it becomes an enduring ancestral home."
           </p>
           <span className="text-xs uppercase tracking-[0.22em] text-[#8E5832] font-mono mt-3 inline-block">
-            — Bello Habitat & Vastukala Atelier Philosophy
+            — Bello Habitat & Vaastukalaa Atelier Philosophy
           </span>
         </div>
       </div>

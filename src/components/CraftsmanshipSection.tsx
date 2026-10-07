@@ -18,7 +18,7 @@ export const CraftsmanshipSection: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
           <div className="inline-flex items-center gap-2 mb-3 text-xs font-mono uppercase tracking-[0.28em] text-[#C09758]">
             <Hammer className="w-3.5 h-3.5 text-[#DFC493]" />
-            <span>VASTUKALA WOODCRAFT ATELIER</span>
+            <span>Vaastukalaa WOODCRAFT ATELIER</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal text-[#FAF8F5] tracking-tight leading-[1.1] mb-6">
             THE ART OF MAKING

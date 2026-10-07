@@ -1,15 +1,15 @@
-# Bello Habitat Consultancy & Vastukala
+# Bello Habitat Consultancy & Vaastukalaa
 
 > *"Where generations of Indian craftsmanship meet contemporary architecture."*
 
-A luxury editorial digital experience designed and built for **Bello Habitat Consultancy** and its dedicated craft division, **Vastukala**, based in Ahmedabad, Gujarat, India.
+A luxury editorial digital experience designed and built for **Bello Habitat Consultancy** and its dedicated craft division, **Vaastukalaa**, based in Ahmedabad, Gujarat, India.
 
 ---
 
 ## 🏛️ Brand & Creative Identity
 
 - **Consultancy Practice**: Bello Habitat Consultancy (Architecture, Interior Design, Landscape, Vastu, Facades, PMC)
-- **Craft Division & Atelier**: Vastukala (45+ Years of Traditional Woodworking Heritage: Temples, Swings/Jhulas, Jharokhas, Sangeda Turnery, Handcrafted Furniture)
+- **Craft Division & Atelier**: Vaastukalaa (45+ Years of Traditional Woodworking Heritage: Temples, Swings/Jhulas, Jharokhas, Sangeda Turnery, Handcrafted Furniture)
 - **Location**: Ahmedabad, Gujarat, India
   - **Design Studio**: 306, Ishaan Square, Tapovan Circle to Visat Circle Road, Chandkheda, Ahmedabad – 382424
   - **Craft Atelier & Workshop**: 89, Sankalp Industrial Park, Opposite Ekta Industrial Park, Nana Chiloda, Ahmedabad
@@ -20,7 +20,7 @@ A luxury editorial digital experience designed and built for **Bello Habitat Con
 ## ✨ Key Architectural & Editorial Features
 
 1. **Cinematic Hero**:
-   - High-impact visual duality switcher: Toggle between *Contemporary Architecture* and *Vastukala Woodcraft*.
+   - High-impact visual duality switcher: Toggle between *Contemporary Architecture* and *Vaastukalaa Woodcraft*.
    - Dynamic typography, dual conversion CTAs, and contextual active visual captions.
 
 2. **Editorial Introduction**:
@@ -32,7 +32,7 @@ A luxury editorial digital experience designed and built for **Bello Habitat Con
    - Interactive milestone progression:
      - `01 — THE BEGINNING`: Traditional craftsmanship and woodworking roots.
      - `02 — THE LEGACY`: Decades of temple carving and classical joinery.
-     - `03 — VASTUKALA`: Dedicated craft identity (mandirs, swings, jharokhas).
+     - `03 — Vaastukalaa`: Dedicated craft identity (mandirs, swings, jharokhas).
      - `04 — EVOLUTION`: Transition from woodworking to spatial architecture.
      - `05 — BELLO HABITAT`: Architecture, interiors, landscape, Vastu and PMC.
      - `06 — TODAY`: Combining traditional craft with minimalist luxury.
@@ -41,11 +41,11 @@ A luxury editorial digital experience designed and built for **Bello Habitat Con
 
 4. **Two Identities, One Philosophy (Duality Feature)**:
    - *"Design gives a space its vision. Craftsmanship gives it its soul."*
-   - Side-by-side interactive comparison between Bello Habitat (Chandkheda) and Vastukala (Nana Chiloda).
+   - Side-by-side interactive comparison between Bello Habitat (Chandkheda) and Vaastukalaa (Nana Chiloda).
 
 5. **"What We Create" (Interactive Service Catalog)**:
    - **Category 01 — Bello Habitat**: Architecture Consultancy, Interior Design, Landscape Design, Vastu Consultancy, Architectural Works & Facades, Renovation PM, Commercial Interiors, PMC.
-   - **Category 02 — Vastukala**: Traditional Temples, Home Temples, Wooden Swings / Jhula, Jharokhas, Traditional Furniture, Rath / Chariots, Sangeda Woodturning, Decorative Elements & Jaalis, Customized Wooden Carving, Handcrafted Products.
+   - **Category 02 — Vaastukalaa**: Traditional Temples, Home Temples, Wooden Swings / Jhula, Jharokhas, Traditional Furniture, Rath / Chariots, Sangeda Woodturning, Decorative Elements & Jaalis, Customized Wooden Carving, Handcrafted Products.
    - Live hover and selection inspector displaying deliverables, craft details, and contextual imagery.
 
 6. **"The Art of Making" (Craftsmanship Atelier)**:

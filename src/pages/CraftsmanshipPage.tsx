@@ -15,7 +15,7 @@ export function CraftsmanshipPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FAF8F5] text-[#22201D] font-sans antialiased selection:bg-[#C09758]/25 selection:text-[#181614] pb-16 sm:pb-0">
+    <div className="min-h-screen bg-[#F7FCFA] text-[#0A2E28] font-sans antialiased selection:bg-[#02AE88]/25 selection:text-[#007E70] pb-16 sm:pb-0">
       <Navbar onOpenConsultation={handleOpenConsultation} />
 
       <CraftsmanshipSection />

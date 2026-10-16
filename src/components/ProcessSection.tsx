@@ -7,23 +7,23 @@ export const ProcessSection: React.FC = () => {
   const [activeStep, setActiveStep] = useState(0);
 
   return (
-    <section className="py-24 sm:py-32 bg-[#F6F2EB] text-[#181614] relative border-b border-[#E5DDD0]">
+    <section className="py-24 sm:py-32 bg-[#F7FCFA] text-[#0A2E28] relative border-b border-[#D4F0E8]">
       {/* Background Architectural Grid */}
-      <div className="absolute inset-0 bg-parchment-pattern opacity-40 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-light-grid opacity-60 pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="max-w-3xl mb-16 sm:mb-20">
           <div className="flex items-center gap-3 mb-3">
-            <span className="w-8 h-[1px] bg-[#8E5832]"></span>
-            <span className="text-xs uppercase tracking-[0.28em] text-[#8E5832] font-mono font-semibold">
+            <span className="w-8 h-[2px] bg-[#02AE88]"></span>
+            <span className="text-xs uppercase tracking-[0.28em] text-[#007E70] font-mono font-bold">
               METHODOLOGY & EXECUTION
             </span>
           </div>
-          <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal text-[#181614] tracking-tight leading-[1.1] mb-6">
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-[#007E70] tracking-tight leading-[1.1] mb-6">
             THE ARCHITECTURAL PROCESS
           </h2>
-          <p className="text-sm sm:text-base text-[#665D50] font-light leading-relaxed font-sans-ui">
+          <p className="text-sm sm:text-base text-[#1C4039] font-normal leading-relaxed">
             From early spiritual and spatial dialogues to final on-site woodcraft joinery, every commission moves through a disciplined, transparent six-stage workflow.
           </p>
         </div>
@@ -38,35 +38,35 @@ export const ProcessSection: React.FC = () => {
                 onMouseEnter={() => setActiveStep(idx)}
                 className={`p-8 border transition-all duration-300 relative flex flex-col justify-between ${
                   isHovered
-                    ? 'bg-white border-[#181614] shadow-lg -translate-y-1'
-                    : 'bg-[#FAF8F5] border-[#E1D7C9] hover:bg-white'
+                    ? 'bg-[#EDF9F6] border-2 border-[#02AE88] shadow-lg -translate-y-1'
+                    : 'bg-white border-[#D4F0E8] hover:border-[#02AE88] shadow-sm'
                 }`}
               >
                 <div>
-                  <div className="flex items-center justify-between border-b border-[#EFE8DE] pb-4 mb-6">
-                    <span className="font-mono text-xl text-[#8E5832] font-bold">
+                  <div className="flex items-center justify-between border-b border-[#D4F0E8] pb-4 mb-6">
+                    <span className="font-mono text-xl text-[#02AE88] font-bold">
                       {step.step}
                     </span>
-                    <span className="text-[10px] font-mono uppercase tracking-widest text-[#9C9182]">
+                    <span className="text-[10px] font-mono uppercase tracking-widest text-[#4D756E] font-bold">
                       STAGE {step.step}
                     </span>
                   </div>
 
-                  <h3 className="font-serif text-2xl text-[#181614] font-medium mb-1">
+                  <h3 className="text-2xl text-[#007E70] font-bold mb-1">
                     {step.name}
                   </h3>
-                  <h4 className="text-xs font-mono uppercase tracking-wider text-[#8E5832] mb-4">
+                  <h4 className="text-xs font-mono uppercase tracking-wider text-[#02AE88] font-bold mb-4">
                     {step.subtitle}
                   </h4>
 
-                  <p className="text-xs sm:text-sm text-[#5D5548] font-light leading-relaxed font-sans-ui">
+                  <p className="text-xs sm:text-sm text-[#1C4039] font-normal leading-relaxed">
                     {step.description}
                   </p>
                 </div>
 
-                <div className="pt-6 mt-6 border-t border-[#EFE8DE] flex items-center justify-between text-xs text-[#8E8373]">
-                  <span>Step {idx + 1} of 06</span>
-                  <CheckCircle2 className={`w-4 h-4 transition-colors ${isHovered ? 'text-[#8E5832]' : 'text-[#D0C5B5]'}`} />
+                <div className="pt-6 mt-6 border-t border-[#D4F0E8] flex items-center justify-between text-xs text-[#4D756E]">
+                  <span className="font-medium">Step {idx + 1} of 06</span>
+                  <CheckCircle2 className={`w-4 h-4 transition-colors ${isHovered ? 'text-[#02AE88]' : 'text-[#B8E6DB]'}`} />
                 </div>
               </div>
             );

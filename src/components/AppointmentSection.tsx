@@ -123,70 +123,70 @@ END:VCALENDAR`;
   return (
     <section
       id="consultation"
-      className={`${isModalMode ? 'py-6' : 'py-24 sm:py-32'} bg-[#181614] text-[#FAF8F5] relative border-b border-[#2C2720] overflow-hidden`}
+      className={`${isModalMode ? 'py-6' : 'py-24 sm:py-32'} bg-[#F7FCFA] text-[#0A2E28] relative border-b border-[#D4F0E8] overflow-hidden`}
     >
       {/* Background Architectural Grid */}
-      <div className="absolute inset-0 bg-dark-grid opacity-25 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-light-grid opacity-60 pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="max-w-3xl mb-12 sm:mb-16">
           <div className="flex items-center gap-3 mb-3">
-            <span className="w-8 h-px bg-[#C09758]"></span>
-            <span className="text-xs uppercase tracking-[0.28em] text-[#DFC493] font-mono">
+            <span className="w-8 h-px bg-[#02AE88]"></span>
+            <span className="text-xs uppercase tracking-[0.28em] text-[#007E70] font-mono font-bold">
               APPOINTMENT & SPATIAL DIALOGUE
             </span>
           </div>
-          <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal text-[#FAF8F5] tracking-tight leading-[1.1] mb-4">
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-[#007E70] tracking-tight leading-[1.1] mb-4">
             LET'S CREATE SOMETHING TIMELESS.
           </h2>
-          <p className="text-sm sm:text-base text-[#B3AAA0] font-light leading-relaxed font-sans-ui">
+          <p className="text-sm sm:text-base text-[#2D5A50] font-normal leading-relaxed">
             Schedule a private architectural consultation at our Chandkheda design studio or arrange an artisan walkthrough at our Nana Chiloda woodcraft atelier.
           </p>
         </div>
 
         {/* Confirmation State */}
         {isSubmitted ? (
-          <div className="bg-[#211E1A] border border-[#C09758] p-8 sm:p-12 max-w-3xl shadow-2xl animate-fade-in">
-            <div className="w-14 h-14 bg-[#C09758] text-[#181614] flex items-center justify-center mb-6">
+          <div className="bg-white border-2 border-[#02AE88] p-8 sm:p-12 max-w-3xl shadow-xl animate-fade-in">
+            <div className="w-14 h-14 bg-[#02AE88] text-white flex items-center justify-center mb-6 shadow-md">
               <CheckCircle2 className="w-8 h-8" />
             </div>
 
             <div className="flex items-center gap-3 mb-2">
-              <span className="text-xs font-mono uppercase tracking-widest text-[#DFC493]">
+              <span className="text-xs font-mono uppercase tracking-widest text-[#007E70] font-bold">
                 CONSULTATION REQUEST LOGGED
               </span>
-              <span className="text-xs font-mono px-2 py-0.5 bg-[#181614] border border-[#C09758] text-[#DFC493]">
+              <span className="text-xs font-mono px-2 py-0.5 bg-[#EDF9F6] border border-[#02AE88] text-[#007E70] font-semibold">
                 REF: {bookingRef}
               </span>
             </div>
 
-            <h3 className="font-serif text-3xl text-[#FAF8F5] mb-4">
+            <h3 className="text-3xl font-bold text-[#007E70] mb-4">
               Thank you, {formData.fullName}.
             </h3>
 
-            <p className="text-sm text-[#CDC3B3] leading-relaxed mb-6 font-sans-ui">
-              We have recorded your consultation request for <strong className="text-white">{formData.projectType}</strong> on <strong className="text-white">{formData.preferredDate}</strong> ({formData.preferredTime}).
+            <p className="text-sm text-[#2D5A50] leading-relaxed mb-6">
+              We have recorded your consultation request for <strong className="text-[#007E70] font-bold">{formData.projectType}</strong> on <strong className="text-[#007E70] font-bold">{formData.preferredDate}</strong> ({formData.preferredTime}).
             </p>
 
             {/* Recap Box */}
-            <div className="p-4 bg-[#181614] border border-[#3A3328] space-y-2 text-xs font-mono text-[#B8AF9F] mb-6">
-              <div><span className="text-[#8E8373]">PATRON:</span> {formData.fullName} ({formData.phone})</div>
-              <div><span className="text-[#8E8373]">LOCATION:</span> {formData.location}</div>
-              <div><span className="text-[#8E8373]">BUDGET TIER:</span> {formData.approximateBudget}</div>
-              <div><span className="text-[#8E8373]">STUDIO VENUE:</span> 306, Ishaan Square, Chandkheda, Ahmedabad</div>
+            <div className="p-4 bg-[#F7FCFA] border border-[#D4F0E8] space-y-2 text-xs font-mono text-[#1C4039] mb-6">
+              <div><span className="text-[#007E70] font-semibold">PATRON:</span> {formData.fullName} ({formData.phone})</div>
+              <div><span className="text-[#007E70] font-semibold">LOCATION:</span> {formData.location}</div>
+              <div><span className="text-[#007E70] font-semibold">BUDGET TIER:</span> {formData.approximateBudget}</div>
+              <div><span className="text-[#007E70] font-semibold">STUDIO VENUE:</span> 306, Ishaan Square, Chandkheda, Ahmedabad</div>
             </div>
 
-            <div className="p-4 bg-[#2A241D] border-l-2 border-[#C09758] text-xs text-[#DFC493] mb-8 italic">
+            <div className="p-4 bg-[#EDF9F6] border-l-4 border-[#02AE88] text-xs text-[#007E70] mb-8 font-medium">
               * Note: This request is formatted for production CRM / email dispatch. Our principal architect Himanshu will review your brief and call within 24 business hours to confirm your calendar slot.
             </div>
 
             <div className="flex flex-wrap items-center gap-4">
               <button
                 onClick={handleDownloadCalendar}
-                className="px-6 py-3 bg-[#C09758] hover:bg-[#D4AF37] text-[#181614] text-xs font-bold tracking-[0.18em] uppercase transition-all flex items-center gap-2 cursor-pointer"
+                className="px-6 py-3 bg-[#02AE88] hover:bg-[#007E70] text-white text-xs font-bold tracking-[0.18em] uppercase transition-all flex items-center gap-2 cursor-pointer shadow-md"
               >
-                <Calendar className="w-4 h-4 text-[#181614]" />
+                <Calendar className="w-4 h-4 text-white" />
                 <span>Add to Calendar (.ics)</span>
               </button>
 
@@ -195,7 +195,7 @@ END:VCALENDAR`;
                   setIsSubmitted(false);
                   if (onCloseModal) onCloseModal();
                 }}
-                className="px-6 py-3 bg-transparent border border-[#52483B] hover:border-white text-[#FAF8F5] text-xs font-medium tracking-wider uppercase transition-all cursor-pointer"
+                className="px-6 py-3 bg-white border border-[#007E70] hover:bg-[#EDF9F6] text-[#007E70] text-xs font-bold tracking-wider uppercase transition-all cursor-pointer"
               >
                 {isModalMode ? 'Close Window' : 'Submit Another Inquiry'}
               </button>
@@ -203,11 +203,11 @@ END:VCALENDAR`;
           </div>
         ) : (
           /* The Form */
-          <form onSubmit={handleSubmit} noValidate className="max-w-4xl bg-[#201D1A] border border-[#383126] p-6 sm:p-10 lg:p-12 shadow-2xl">
+          <form onSubmit={handleSubmit} noValidate className="max-w-4xl bg-white border-2 border-[#D4F0E8] p-6 sm:p-10 lg:p-12 shadow-xl">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
               {/* Full Name */}
               <div>
-                <label className="block text-xs font-mono uppercase tracking-wider text-[#C09758] mb-2">
+                <label className="block text-xs font-bold uppercase tracking-wider text-[#007E70] mb-2">
                   Full Name *
                 </label>
                 <input
@@ -215,16 +215,16 @@ END:VCALENDAR`;
                   value={formData.fullName}
                   onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                   placeholder="e.g., Rajeshbhai Patel"
-                  className="w-full bg-[#181614] border border-[#3E362C] focus:border-[#C09758] px-4 py-3 text-sm text-[#FAF8F5] placeholder-[#665D4F] outline-none transition-colors"
+                  className="w-full bg-[#F7FCFA] border border-[#D4F0E8] focus:border-[#02AE88] focus:bg-white px-4 py-3 text-sm text-[#0A2E28] placeholder-[#7A9E97] outline-none transition-colors"
                 />
                 {errors.fullName && (
-                  <p className="mt-1 text-xs text-[#E57373] font-mono">{errors.fullName}</p>
+                  <p className="mt-1 text-xs text-[#D32F2F] font-mono">{errors.fullName}</p>
                 )}
               </div>
 
               {/* Phone Number */}
               <div>
-                <label className="block text-xs font-mono uppercase tracking-wider text-[#C09758] mb-2">
+                <label className="block text-xs font-bold uppercase tracking-wider text-[#007E70] mb-2">
                   Phone Number *
                 </label>
                 <input
@@ -232,16 +232,16 @@ END:VCALENDAR`;
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   placeholder="+91 98765 43210"
-                  className="w-full bg-[#181614] border border-[#3E362C] focus:border-[#C09758] px-4 py-3 text-sm text-[#FAF8F5] placeholder-[#665D4F] outline-none transition-colors"
+                  className="w-full bg-[#F7FCFA] border border-[#D4F0E8] focus:border-[#02AE88] focus:bg-white px-4 py-3 text-sm text-[#0A2E28] placeholder-[#7A9E97] outline-none transition-colors"
                 />
                 {errors.phone && (
-                  <p className="mt-1 text-xs text-[#E57373] font-mono">{errors.phone}</p>
+                  <p className="mt-1 text-xs text-[#D32F2F] font-mono">{errors.phone}</p>
                 )}
               </div>
 
               {/* Email Address */}
               <div>
-                <label className="block text-xs font-mono uppercase tracking-wider text-[#C09758] mb-2">
+                <label className="block text-xs font-bold uppercase tracking-wider text-[#007E70] mb-2">
                   Email Address *
                 </label>
                 <input
@@ -249,25 +249,25 @@ END:VCALENDAR`;
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   placeholder="name@domain.com"
-                  className="w-full bg-[#181614] border border-[#3E362C] focus:border-[#C09758] px-4 py-3 text-sm text-[#FAF8F5] placeholder-[#665D4F] outline-none transition-colors"
+                  className="w-full bg-[#F7FCFA] border border-[#D4F0E8] focus:border-[#02AE88] focus:bg-white px-4 py-3 text-sm text-[#0A2E28] placeholder-[#7A9E97] outline-none transition-colors"
                 />
                 {errors.email && (
-                  <p className="mt-1 text-xs text-[#E57373] font-mono">{errors.email}</p>
+                  <p className="mt-1 text-xs text-[#D32F2F] font-mono">{errors.email}</p>
                 )}
               </div>
 
               {/* Project Type */}
               <div>
-                <label className="block text-xs font-mono uppercase tracking-wider text-[#C09758] mb-2">
+                <label className="block text-xs font-bold uppercase tracking-wider text-[#007E70] mb-2">
                   Project Type *
                 </label>
                 <select
                   value={formData.projectType}
                   onChange={(e) => setFormData({ ...formData, projectType: e.target.value })}
-                  className="w-full bg-[#181614] border border-[#3E362C] focus:border-[#C09758] px-4 py-3 text-sm text-[#FAF8F5] outline-none transition-colors"
+                  className="w-full bg-[#F7FCFA] border border-[#D4F0E8] focus:border-[#02AE88] focus:bg-white px-4 py-3 text-sm text-[#0A2E28] outline-none transition-colors cursor-pointer"
                 >
                   {projectTypes.map(t => (
-                    <option key={t} value={t} className="bg-[#181614] text-[#FAF8F5]">
+                    <option key={t} value={t} className="bg-white text-[#0A2E28]">
                       {t}
                     </option>
                   ))}
@@ -276,7 +276,7 @@ END:VCALENDAR`;
 
               {/* Location */}
               <div>
-                <label className="block text-xs font-mono uppercase tracking-wider text-[#C09758] mb-2">
+                <label className="block text-xs font-bold uppercase tracking-wider text-[#007E70] mb-2">
                   Project Location / City *
                 </label>
                 <input
@@ -284,25 +284,25 @@ END:VCALENDAR`;
                   value={formData.location}
                   onChange={(e) => setFormData({ ...formData, location: e.target.value })}
                   placeholder="e.g., Ahmedabad (Bopal / SG Highway / Chandkheda)"
-                  className="w-full bg-[#181614] border border-[#3E362C] focus:border-[#C09758] px-4 py-3 text-sm text-[#FAF8F5] placeholder-[#665D4F] outline-none transition-colors"
+                  className="w-full bg-[#F7FCFA] border border-[#D4F0E8] focus:border-[#02AE88] focus:bg-white px-4 py-3 text-sm text-[#0A2E28] placeholder-[#7A9E97] outline-none transition-colors"
                 />
                 {errors.location && (
-                  <p className="mt-1 text-xs text-[#E57373] font-mono">{errors.location}</p>
+                  <p className="mt-1 text-xs text-[#D32F2F] font-mono">{errors.location}</p>
                 )}
               </div>
 
               {/* Approximate Project Budget */}
               <div>
-                <label className="block text-xs font-mono uppercase tracking-wider text-[#C09758] mb-2">
+                <label className="block text-xs font-bold uppercase tracking-wider text-[#007E70] mb-2">
                   Approximate Budget
                 </label>
                 <select
                   value={formData.approximateBudget}
                   onChange={(e) => setFormData({ ...formData, approximateBudget: e.target.value })}
-                  className="w-full bg-[#181614] border border-[#3E362C] focus:border-[#C09758] px-4 py-3 text-sm text-[#FAF8F5] outline-none transition-colors"
+                  className="w-full bg-[#F7FCFA] border border-[#D4F0E8] focus:border-[#02AE88] focus:bg-white px-4 py-3 text-sm text-[#0A2E28] outline-none transition-colors cursor-pointer"
                 >
                   {budgetTiers.map(b => (
-                    <option key={b} value={b} className="bg-[#181614] text-[#FAF8F5]">
+                    <option key={b} value={b} className="bg-white text-[#0A2E28]">
                       {b}
                     </option>
                   ))}
@@ -311,7 +311,7 @@ END:VCALENDAR`;
 
               {/* Preferred Consultation Date */}
               <div>
-                <label className="block text-xs font-mono uppercase tracking-wider text-[#C09758] mb-2">
+                <label className="block text-xs font-bold uppercase tracking-wider text-[#007E70] mb-2">
                   Preferred Date *
                 </label>
                 <input
@@ -319,25 +319,25 @@ END:VCALENDAR`;
                   value={formData.preferredDate}
                   onChange={(e) => setFormData({ ...formData, preferredDate: e.target.value })}
                   min={new Date().toISOString().split('T')[0]}
-                  className="w-full bg-[#181614] border border-[#3E362C] focus:border-[#C09758] px-4 py-3 text-sm text-[#FAF8F5] outline-none transition-colors"
+                  className="w-full bg-[#F7FCFA] border border-[#D4F0E8] focus:border-[#02AE88] focus:bg-white px-4 py-3 text-sm text-[#0A2E28] outline-none transition-colors cursor-pointer"
                 />
                 {errors.preferredDate && (
-                  <p className="mt-1 text-xs text-[#E57373] font-mono">{errors.preferredDate}</p>
+                  <p className="mt-1 text-xs text-[#D32F2F] font-mono">{errors.preferredDate}</p>
                 )}
               </div>
 
               {/* Preferred Time */}
               <div>
-                <label className="block text-xs font-mono uppercase tracking-wider text-[#C09758] mb-2">
+                <label className="block text-xs font-bold uppercase tracking-wider text-[#007E70] mb-2">
                   Preferred Time Slot
                 </label>
                 <select
                   value={formData.preferredTime}
                   onChange={(e) => setFormData({ ...formData, preferredTime: e.target.value })}
-                  className="w-full bg-[#181614] border border-[#3E362C] focus:border-[#C09758] px-4 py-3 text-sm text-[#FAF8F5] outline-none transition-colors"
+                  className="w-full bg-[#F7FCFA] border border-[#D4F0E8] focus:border-[#02AE88] focus:bg-white px-4 py-3 text-sm text-[#0A2E28] outline-none transition-colors cursor-pointer"
                 >
                   {timeSlots.map(slot => (
-                    <option key={slot} value={slot} className="bg-[#181614] text-[#FAF8F5]">
+                    <option key={slot} value={slot} className="bg-white text-[#0A2E28]">
                       {slot}
                     </option>
                   ))}
@@ -346,7 +346,7 @@ END:VCALENDAR`;
 
               {/* Project Brief / Message */}
               <div className="md:col-span-2">
-                <label className="block text-xs font-mono uppercase tracking-wider text-[#C09758] mb-2">
+                <label className="block text-xs font-bold uppercase tracking-wider text-[#007E70] mb-2">
                   Project Vision & Scope Notes (Optional)
                 </label>
                 <textarea
@@ -354,18 +354,18 @@ END:VCALENDAR`;
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   placeholder="Share details regarding your plot area, family requirements, architectural style preference, or custom temple/woodcraft requirements..."
-                  className="w-full bg-[#181614] border border-[#3E362C] focus:border-[#C09758] p-4 text-sm text-[#FAF8F5] placeholder-[#665D4F] outline-none transition-colors"
+                  className="w-full bg-[#F7FCFA] border border-[#D4F0E8] focus:border-[#02AE88] focus:bg-white p-4 text-sm text-[#0A2E28] placeholder-[#7A9E97] outline-none transition-colors"
                 ></textarea>
               </div>
             </div>
 
             {/* Note regarding backend readiness */}
-            <div className="mt-6 pt-4 border-t border-[#312B23] flex items-center justify-between text-xs text-[#8A8072]">
+            <div className="mt-6 pt-4 border-t border-[#D4F0E8] flex items-center justify-between text-xs text-[#406860]">
               <div className="flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4 text-[#C09758]" />
+                <ShieldCheck className="w-4 h-4 text-[#02AE88]" />
                 <span>Frontend validated & ready for CRM / Email / Google Calendar sync.</span>
               </div>
-              <span className="hidden sm:inline font-mono">Chandkheda Studio • Nana Chiloda Atelier</span>
+              <span className="hidden sm:inline font-mono font-medium">Chandkheda Studio • Nana Chiloda Atelier</span>
             </div>
 
             {/* Submit Button */}
@@ -373,14 +373,14 @@ END:VCALENDAR`;
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full sm:w-auto px-8 py-4 bg-[#C09758] hover:bg-[#D4AF37] text-[#181614] font-bold text-xs sm:text-sm tracking-[0.22em] uppercase transition-all duration-300 flex items-center justify-center gap-2 shadow-lg cursor-pointer"
+                className="w-full sm:w-auto px-8 py-4 bg-[#02AE88] hover:bg-[#007E70] text-white font-bold text-xs sm:text-sm tracking-[0.22em] uppercase transition-all duration-300 flex items-center justify-center gap-2 shadow-lg cursor-pointer"
               >
                 {isSubmitting ? (
                   <span>SCHEDULING...</span>
                 ) : (
                   <>
                     <span>SCHEDULE A CONSULTATION</span>
-                    <ArrowUpRight className="w-4 h-4 text-[#181614]" />
+                    <ArrowUpRight className="w-4 h-4 text-white" />
                   </>
                 )}
               </button>

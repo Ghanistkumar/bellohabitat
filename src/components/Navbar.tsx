@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Menu, X, Phone, ArrowUpRight, Compass, ShieldCheck } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
 import { COMPANY_INFO } from '../data/siteData';
-
 interface NavbarProps {
   onOpenConsultation: (projectType?: string) => void;
 }

@@ -14,7 +14,7 @@ export interface JourneyMilestone {
 export interface ServiceItem {
   id: string;
   name: string;
-  division: 'bello' | 'vastukala';
+  division: 'bello' | 'Vaastukalaa';
   divisionLabel: string;
   tagline: string;
   description: string;
@@ -29,7 +29,7 @@ export interface ProjectItem {
   title: string;
   category: 'ARCHITECTURE' | 'INTERIORS' | 'TRADITIONAL CRAFT' | 'WOODWORK' | 'TEMPLES' | 'COMMERCIAL' | 'RESIDENTIAL';
   categoryLabel: string;
-  division: 'Bello Habitat' | 'Vastukala' | 'Collaborative Duality';
+  division: 'Bello Habitat' | 'Vaastukalaa' | 'Collaborative Duality';
   location: string;
   year: string;
   heroImage: string;
@@ -56,7 +56,7 @@ export interface CraftStage {
 
 export const COMPANY_INFO = {
   name: "Bello Habitat Consultancy",
-  craftDivision: "Vastukala",
+  craftDivision: "Vaastukalaa",
   tagline: "Where generations of Indian craftsmanship meet contemporary architecture.",
   subTagline: "From hand-carved wood to contemporary habitats.",
   motto: "WE DESIGN YOUR LIFESTYLE IN BETTER WAYS.",
@@ -69,7 +69,7 @@ export const COMPANY_INFO = {
     hours: "Mon – Sat: 10:00 AM – 7:00 PM (By Appointment)"
   },
   workshop: {
-    title: "Vastukala Woodcraft Atelier & Workshop",
+    title: "Vaastukalaa Woodcraft Atelier & Workshop",
     address: "89, Sankalp Industrial Park, Opposite Ekta Industrial Park, Nana Chiloda, Ahmedabad",
     landmark: "Nana Chiloda Industrial Corridor",
     hours: "Mon – Sat: 9:00 AM – 6:30 PM (Atelier Visits by Prior Appointment)"
@@ -110,11 +110,11 @@ export const JOURNEY_MILESTONES: JourneyMilestone[] = [
   {
     step: "03",
     era: "The Atelier",
-    title: "VASTUKALA",
+    title: "Vaastukalaa",
     subtitle: "The Dedicated Craft-Focused Identity",
     category: "Identity",
-    description: "Formalized as Vastukala, creating bespoke traditional temples, royal swings (jhulas), carved jharokhas, and timeless heirloom furniture.",
-    detailedStory: "Vastukala became a revered destination for patrons seeking non-industrialized, museum-grade woodwork. From grand home mandirs with hand-turned sangeda columns to brass-accented swings, every creation preserved cultural soul in private residences.",
+    description: "Formalized as Vaastukalaa, creating bespoke traditional temples, royal swings (jhulas), carved jharokhas, and timeless heirloom furniture.",
+    detailedStory: "Vaastukalaa became a revered destination for patrons seeking non-industrialized, museum-grade woodwork. From grand home mandirs with hand-turned sangeda columns to brass-accented swings, every creation preserved cultural soul in private residences.",
     image: "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=1200&q=80",
     craftFocus: ["Traditional Mandir Architecture", "Hand-Turned Sangeda", "Heirloom Jhulas"],
     locationTag: "Nana Chiloda Atelier"
@@ -191,7 +191,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     tagline: "Curated atmospheres tailored to refined lifestyles.",
     description: "Bespoke spatial design encompassing custom layouts, acoustic warmth, lighting design, curated stone finishes, and tailored furniture configurations.",
     deliverables: ["Comprehensive Layout Blueprints", "Material & Finish Schedules", "Custom Lighting Layouts", "Bespoke Millwork Details"],
-    craftDetails: "Integrating custom Vastukala millwork seamlessly into modern, minimalist interior backdrops.",
+    craftDetails: "Integrating custom Vaastukalaa millwork seamlessly into modern, minimalist interior backdrops.",
     image: "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?auto=format&fit=crop&w=1200&q=80",
     accentNote: "Bespoke Habitation"
   },
@@ -268,12 +268,12 @@ export const SERVICES_DATA: ServiceItem[] = [
     accentNote: "Execution Guardianship"
   },
 
-  // CATEGORY 02 — VASTUKALA (TRADITIONAL CRAFT DIVISION)
+  // CATEGORY 02 — Vaastukalaa (TRADITIONAL CRAFT DIVISION)
   {
     id: "traditional-temples",
     name: "Traditional Temples & Mandirs",
-    division: "vastukala",
-    divisionLabel: "Vastukala Craft Division",
+    division: "Vaastukalaa",
+    divisionLabel: "Vaastukalaa Craft Division",
     tagline: "Sacred sanctums carved according to ancient Shilpa Shastra.",
     description: "Grand freestanding mandir structures and architectural shrine complexes executed in solid teak, marble, and brass, embodying divine proportions.",
     deliverables: ["Shikhar & Mandap Architecture", "Detailed Iconographic Carvings", "Concealed Warm Lighting Details", "Integrated Storage & Diya Drawers"],
@@ -284,8 +284,8 @@ export const SERVICES_DATA: ServiceItem[] = [
   {
     id: "home-temples",
     name: "Home Temples (Bespoke Puja Units)",
-    division: "vastukala",
-    divisionLabel: "Vastukala Craft Division",
+    division: "Vaastukalaa",
+    divisionLabel: "Vaastukalaa Craft Division",
     tagline: "Intimate devotion tailored for modern apartment and bungalow spaces.",
     description: "Custom wall-hung or floor-mounted mandirs engineered for contemporary homes, blending minimalist brass accents with ornate carved backdrops.",
     deliverables: ["Space-Optimized Layouts", "Ventilated Incense Channels", "Brass Inlays & Bells", "Treated Fire-Safe Finishes"],
@@ -296,8 +296,8 @@ export const SERVICES_DATA: ServiceItem[] = [
   {
     id: "wooden-swings",
     name: "Wooden Swings / Jhula",
-    division: "vastukala",
-    divisionLabel: "Vastukala Craft Division",
+    division: "Vaastukalaa",
+    divisionLabel: "Vaastukalaa Craft Division",
     tagline: "The quintessential soul of Gujarati domestic living.",
     description: "Handcrafted wooden swings suspended by cast brass or wrought-iron links, featuring turned sangeda spindles and ergonomic curved seating.",
     deliverables: ["Solid CP Teak Plank Construction", "Hand-Turned Side Spindles", "Structural Ceiling Load Anchors", "Hand-Polished Natural Finishes"],
@@ -308,8 +308,8 @@ export const SERVICES_DATA: ServiceItem[] = [
   {
     id: "jharokhas",
     name: "Carved Jharokhas & Wall Windows",
-    division: "vastukala",
-    divisionLabel: "Vastukala Craft Division",
+    division: "Vaastukalaa",
+    divisionLabel: "Vaastukalaa Craft Division",
     tagline: "Architectural overhangs and sculptural wall balconies.",
     description: "Ornamental wooden balconies, mirror frames, and visual portals inspired by the royal architecture of Gujarat and Rajasthan.",
     deliverables: ["Aged Teakwood Joinery", "Intricate Bracket Supports", "Antique Brass Hardware", "Custom Wall-Mount Structural Brackets"],
@@ -320,8 +320,8 @@ export const SERVICES_DATA: ServiceItem[] = [
   {
     id: "traditional-furniture",
     name: "Traditional Sofas, Chairs & Consoles",
-    division: "vastukala",
-    divisionLabel: "Vastukala Craft Division",
+    division: "Vaastukalaa",
+    divisionLabel: "Vaastukalaa Craft Division",
     tagline: "Seating that carries historical grandeur into the contemporary salon.",
     description: "Bespoke low-height seating, carved formal settees, solid wood dining tables, and entryway consoles engineered for lifetime longevity.",
     deliverables: ["Mortise & Tenon Structural Joinery", "Custom Belgian Linen / Silk Upholstery", "Curved Armrests & Lion-Paw Legs", "Hand-Rubbed Matte Wax Sealant"],
@@ -332,8 +332,8 @@ export const SERVICES_DATA: ServiceItem[] = [
   {
     id: "rath-chariots",
     name: "Rath / Traditional Chariots",
-    division: "vastukala",
-    divisionLabel: "Vastukala Craft Division",
+    division: "Vaastukalaa",
+    divisionLabel: "Vaastukalaa Craft Division",
     tagline: "Monuments on wheels crafted for festive temple processions.",
     description: "Rare traditional woodwork expertise constructing ceremonial wooden raths, temple festival chariots, and palanquins with structural timber engineering.",
     deliverables: ["Heavy Structural Timber Chassis", "Hand-Turned Wooden Wheels", "Mythological Narrative Carvings", "Load-Bearing Axle Joinery"],
@@ -344,8 +344,8 @@ export const SERVICES_DATA: ServiceItem[] = [
   {
     id: "sangeda-craft",
     name: "Sangeda Woodturning Art",
-    division: "vastukala",
-    divisionLabel: "Vastukala Craft Division",
+    division: "Vaastukalaa",
+    divisionLabel: "Vaastukalaa Craft Division",
     tagline: "Precision rotational woodturning and classical lacquer work.",
     description: "The time-honored Gujarati art of lathe-turned wooden pillars, balusters, table legs, and jhula supports characterized by smooth concentric contours.",
     deliverables: ["Centric Spindle Turning", "Fluted & Spiral Contours", "Hand-Finished Satin Luster", "Architectural Balustrades"],
@@ -356,8 +356,8 @@ export const SERVICES_DATA: ServiceItem[] = [
   {
     id: "decorative-elements",
     name: "Decorative Wooden Elements & Jaalis",
-    division: "vastukala",
-    divisionLabel: "Vastukala Craft Division",
+    division: "Vaastukalaa",
+    divisionLabel: "Vaastukalaa Craft Division",
     tagline: "Tactile relief panels, wooden brackets, and ceiling medallions.",
     description: "Custom geometric and floral jaali partitions, coffered wooden ceiling beams, carved cornice moldings, and heirloom wall panels.",
     deliverables: ["Architectural Partition Screens", "Bespoke Ceiling Beam Coffer Systems", "Intricate Wall Art Medallions", "Custom Antique Inlays"],
@@ -368,8 +368,8 @@ export const SERVICES_DATA: ServiceItem[] = [
   {
     id: "customized-carving",
     name: "Customized Wooden Carving",
-    division: "vastukala",
-    divisionLabel: "Vastukala Craft Division",
+    division: "Vaastukalaa",
+    divisionLabel: "Vaastukalaa Craft Division",
     tagline: "One-of-a-kind bespoke artistic woodwork commissioned by architects.",
     description: "Translating custom sketches, family insignias, sacred motifs, or bespoke architectural textures into solid teak or rosewood masterpieces.",
     deliverables: ["Artisan Sample Carvings", "1:1 Scale Paper Stencil Layouts", "Client In-Progress Atelier Reviews", "Hand-Polished Final Installation"],
@@ -380,8 +380,8 @@ export const SERVICES_DATA: ServiceItem[] = [
   {
     id: "handcrafted-products",
     name: "Traditional Handcrafted Wooden Products",
-    division: "vastukala",
-    divisionLabel: "Vastukala Craft Division",
+    division: "Vaastukalaa",
+    divisionLabel: "Vaastukalaa Craft Division",
     tagline: "Artisanal decor, chests (patara), and heritage gifting artifacts.",
     description: "Curated heirloom artifacts including brass-banded Gujarati pataras (dowry chests), carved mirror frames, bookstands, and devotional accessories.",
     deliverables: ["Authentic Brass Hardware", "Solid Wood Joinery", "Natural Carnauba Wax Polish", "Archival Longevity"],
@@ -472,7 +472,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
     ],
     shortDescription: "A modern monolithic concrete and exposed brick bungalow centered around a tranquil water courtyard, shaded by custom operable teakwood brise-soleil.",
     idea: "The client requested a private sanctuary in Ahmedabad's urban landscape that honored their joint family roots while maintaining a calm, minimalist architectural presence with zero visual clutter.",
-    designApproach: "Bello Habitat designed a thermal-mass oriented floorplan utilizing north-facing courtyards and deep overhangs. Vastukala crafted full-height vertical pivot screens from reclaimed teak that modulate afternoon sunlight into poetic shadow patterns.",
+    designApproach: "Bello Habitat designed a thermal-mass oriented floorplan utilizing north-facing courtyards and deep overhangs. Vaastukalaa crafted full-height vertical pivot screens from reclaimed teak that modulate afternoon sunlight into poetic shadow patterns.",
     craftsmanship: "The central living room features a custom 8-foot suspended Burma teak swing with hand-cast brass joints, paired with hand-planed ceiling rafters that draw eyes toward the open sky.",
     materials: ["Board-Formed Concrete", "Wire-Cut Red Brick", "Reclaimed CP Teak", "Kota Stone Flooring", "Cast Brass Hardware"],
     dimensionsOrArea: "8,500 sq.ft Built-Up",
@@ -483,7 +483,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
     title: "Sanctum of Light — Bespoke Home Mandir",
     category: "TEMPLES",
     categoryLabel: "Traditional Sacred Architecture",
-    division: "Vastukala",
+    division: "Vaastukalaa",
     location: "Sindhu Bhavan Road, Ahmedabad",
     year: "2023",
     heroImage: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1400&q=80",
@@ -494,7 +494,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
     ],
     shortDescription: "A temple sanctum sculpted in pure white Makrana marble and hand-carved sagwan timber, with recessed 24k gold leaf accents and sacred Shilpa Shastra proportions.",
     idea: "A devotional haven created within a luxury penthouse, requiring seamless acoustic isolation from the urban buzz while generating an immediate sense of divine quietude.",
-    designApproach: "Vastu orientations dictated the Northeast placement. The sanctum balances floating minimalist stone pedestals with a handcrafted stepped ceiling dome (shikhar) carved entirely in the Vastukala workshop.",
+    designApproach: "Vastu orientations dictated the Northeast placement. The sanctum balances floating minimalist stone pedestals with a handcrafted stepped ceiling dome (shikhar) carved entirely in the Vaastukalaa workshop.",
     craftsmanship: "Over 600 hours of artisanal hand-carving produced the continuous floral fretwork frieze and lotus medallion, illuminated by soft concealed 2700K warm LED light.",
     materials: ["Solid Sagwan (Teakwood)", "Makrana Pristine White Marble", "Hand-Beaten Brass Bells", "24K Gold Leaf Inlay"],
     dimensionsOrArea: "320 sq.ft Sanctum",
@@ -517,7 +517,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
     shortDescription: "A warm minimalist apartment interior blending micro-cement walls, lime-wash textures, fluted walnut paneling, and tailored low-profile furnishings.",
     idea: "Creating a tactile home for a family returning from abroad who sought international spatial elegance without sterile modernism.",
     designApproach: "Neutral earthy tones, concealed flush-door joinery, and expansive open-plan zones that celebrate Gujarat's natural daylight.",
-    craftsmanship: "Custom hand-turned dining table in solid walnut with sculpted pedestal legs created by Vastukala's woodturners using sangeda principles.",
+    craftsmanship: "Custom hand-turned dining table in solid walnut with sculpted pedestal legs created by Vaastukalaa's woodturners using sangeda principles.",
     materials: ["Italian Travertine", "Micro-Concrete Plaster", "American Walnut", "Brushed Bronze", "Linen Fabrics"],
     dimensionsOrArea: "4,200 sq.ft Duplex",
     isFeatured: true
@@ -571,7 +571,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
     title: "The Royal Swarna Jhula Pavilion",
     category: "TRADITIONAL CRAFT",
     categoryLabel: "Heirloom Craft & Custom Woodwork",
-    division: "Vastukala",
+    division: "Vaastukalaa",
     location: "Gandhinagar Residence, Gujarat",
     year: "2023",
     heroImage: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1400&q=80",
@@ -593,7 +593,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
     title: "Carved Jharokha & Jaali Study",
     category: "WOODWORK",
     categoryLabel: "Custom Woodwork & Architectural Elements",
-    division: "Vastukala",
+    division: "Vaastukalaa",
     location: "Heritage Quarter, Ahmedabad",
     year: "2023",
     heroImage: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1400&q=80",
@@ -743,7 +743,7 @@ export const TESTIMONIAL_PLACEHOLDERS = [
     clientLabel: "[Client Testimonial — Private Residence Patron]",
     projectType: "Bespoke Bungalow Architecture & Custom Mandir",
     location: "Bopal-Ambli, Ahmedabad",
-    quote: "The seamless integration between Bello Habitat's modern architectural vision and Vastukala's traditional wood carving was unlike anything we experienced with other firms. Our home feels simultaneously contemporary and deeply grounded in our ancestral heritage.",
+    quote: "The seamless integration between Bello Habitat's modern architectural vision and Vaastukalaa's traditional wood carving was unlike anything we experienced with other firms. Our home feels simultaneously contemporary and deeply grounded in our ancestral heritage.",
     note: "Verified client feedback will replace this editorial placeholder."
   },
   {

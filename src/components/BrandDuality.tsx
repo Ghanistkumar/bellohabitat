@@ -3,7 +3,7 @@ import { ArrowLeftRight, Compass, Building2, Hammer } from 'lucide-react';
 
 
 export const BrandDuality: React.FC = () => {
-  const [activeSide, setActiveSide] = useState<'both' | 'bello' | 'vastukala'>('both');
+  const [activeSide, setActiveSide] = useState<'both' | 'bello' | 'Vaastukalaa'>('both');
 
   return (
     <section className="py-24 sm:py-32 bg-[#F7FCFA] relative border-b border-[#D4F0E8] overflow-hidden">
@@ -52,7 +52,7 @@ export const BrandDuality: React.FC = () => {
                 activeSide === 'vastukala' ? 'bg-[#007E70] text-white shadow-sm' : 'text-[#1C4039] hover:text-[#007E70]'
               }`}
             >
-              Vastukala (Woodcraft Atelier)
+              Vaastukalaa (Woodcraft Atelier)
             </button>
           </div>
         </div>

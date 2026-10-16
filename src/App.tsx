@@ -90,7 +90,7 @@ export function App() {
       {/* 4. OUR JOURNEY / LEGACY FEATURE */}
       <JourneyTimeline />
 
-      {/* 5. BELLO HABITAT + VASTUKALA DUALITY */}
+      {/* 5. BELLO HABITAT + Vaastukalaa DUALITY */}
       <BrandDuality />
 
       {/* 6. SERVICES (WHAT WE CREATE) */}

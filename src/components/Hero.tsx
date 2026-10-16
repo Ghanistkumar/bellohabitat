@@ -19,7 +19,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation, onExploreJourney
       focus: "Spatial Flow • Minimalist Form • Vastu Geometry"
     },
     woodcraft: {
-      tag: "VASTUKALA HAND-CARVED WOODCRAFT",
+      tag: "Vaastukalaa HAND-CARVED WOODCRAFT",
       image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=2000&q=85",
       caption: "Seasoned CP Teakwood hand-carved in our Nana Chiloda atelier using 45+ years of traditional Gujarati woodcraft lineage.",
       focus: "Aged Teak • Classical Chisels • Sangeda Woodturning"

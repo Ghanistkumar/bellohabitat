@@ -8,7 +8,7 @@ interface ServicesSectionProps {
 }
 
 export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServiceForConsultation }) => {
-  const [activeCategory, setActiveCategory] = useState<'all' | 'bello' | 'vastukala'>('all');
+  const [activeCategory, setActiveCategory] = useState<'all' | 'bello' | 'Vaastukalaa'>('all');
   const [selectedServiceId, setSelectedServiceId] = useState<string>(SERVICES_DATA[0].id);
 
   const filteredServices = SERVICES_DATA.filter(service => {
@@ -78,7 +78,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                   : 'text-[#1C4039] hover:text-[#007E70]'
               }`}
             >
-              Vastukala (Woodcraft)
+              Vaastukalaa (Woodcraft)
             </button>
           </div>
         </div>
@@ -118,7 +118,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                             : 'bg-[#02AE88] text-white'
                         }`}
                       >
-                        {service.division === 'bello' ? 'Architecture' : 'Vastukala Craft'}
+                        {service.division === 'bello' ? 'Architecture' : 'Vaastukalaa Craft'}
                       </span>
                       <Eye className={`w-4 h-4 transition-colors ${isSelected ? 'text-[#02AE88]' : 'text-[#B8E6DB]'}`} />
                     </div>

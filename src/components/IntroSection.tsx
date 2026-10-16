@@ -16,7 +16,7 @@ export const IntroSection: React.FC<IntroSectionProps> = ({ onOpenConsultation, 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Pre-heading */}
         <div className="flex items-center gap-3 mb-6">
-          <span className="w-8 h-[2px] bg-[#02AE88]"></span>
+          <span className="w-8 h-0.5 bg-[#02AE88]"></span>
           <span className="text-xs uppercase tracking-[0.26em] text-[#007E70] font-bold">
             EDITORIAL INTRODUCTION
           </span>
@@ -119,7 +119,7 @@ export const IntroSection: React.FC<IntroSectionProps> = ({ onOpenConsultation, 
             <div className="relative mx-auto max-w-md lg:max-w-none">
               {/* Main Image Frame with architectural border offset */}
               <div className="relative border border-[#D4F0E8] p-3 bg-white shadow-xl">
-                <div className="aspect-[4/5] overflow-hidden bg-[#EDF9F6]">
+                <div className="aspect-4/5 overflow-hidden bg-[#EDF9F6]">
                   <img
                     src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
                     alt="Bello Habitat architectural dialogue and woodcraft harmony"
@@ -135,7 +135,7 @@ export const IntroSection: React.FC<IntroSectionProps> = ({ onOpenConsultation, 
               </div>
 
               {/* Floating Overlay Badge: Wood Grain Detail */}
-              <div className="absolute -bottom-6 -left-6 sm:-left-8 bg-[#007E70] text-white p-4 sm:p-5 border-2 border-[#02AE88] shadow-2xl max-w-[260px]">
+              <div className="absolute -bottom-6 -left-6 sm:-left-8 bg-[#007E70] text-white p-4 sm:p-5 border-2 border-[#02AE88] shadow-2xl max-w-65">
                 <div className="flex items-center gap-2 text-[#3DCBA8] text-[10px] tracking-widest uppercase mb-1 font-mono font-bold">
                   <Sparkles className="w-3 h-3 text-[#02AE88]" />
                   <span>CRAFT HARMONY</span>

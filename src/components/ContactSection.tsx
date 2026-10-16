@@ -19,7 +19,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenConsultati
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 sm:mb-20">
           <div>
             <div className="flex items-center gap-3 mb-3">
-              <span className="w-8 h-[1px] bg-[#02AE88]"></span>
+              <span className="w-8 h-px bg-[#02AE88]"></span>
               <span className="text-xs uppercase tracking-[0.28em] text-[#007E70] font-mono font-bold">
                 LOCATIONS & DIALOGUE
               </span>
@@ -234,7 +234,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenConsultati
           </div>
 
           {/* Map Styled Container */}
-          <div className="aspect-[21/9] sm:aspect-[24/8] bg-[#EDF9F6] relative flex items-center justify-center overflow-hidden border border-[#D4F0E8]">
+          <div className="aspect-21/9 sm:aspect-24/8 bg-[#EDF9F6] relative flex items-center justify-center overflow-hidden border border-[#D4F0E8]">
             <div className="absolute inset-0 opacity-40 bg-light-grid"></div>
 
             <div className="text-center z-10 p-6 max-w-lg bg-white/95 backdrop-blur-sm border border-[#A3E0D2] shadow-md">

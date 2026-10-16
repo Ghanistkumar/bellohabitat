@@ -36,7 +36,7 @@ export const ProjectsGrid: React.FC<ProjectsGridProps> = ({ onSelectProject }) =
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-16">
           <div className="max-w-2xl">
             <div className="flex items-center gap-3 mb-3">
-              <span className="w-8 h-[2px] bg-[#02AE88]"></span>
+              <span className="w-8 h-0.5 bg-[#02AE88]"></span>
               <span className="text-xs uppercase tracking-[0.28em] text-[#007E70] font-mono font-bold">
                 PORTFOLIO OF SPACES & CRAFT
               </span>
@@ -86,13 +86,13 @@ export const ProjectsGrid: React.FC<ProjectsGridProps> = ({ onSelectProject }) =
                 className={`${colSpan} group cursor-pointer bg-white border border-[#D4F0E8] hover:border-[#02AE88] transition-all duration-300 shadow-sm flex flex-col justify-between`}
               >
                 {/* Image Container */}
-                <div className="relative aspect-[16/11] overflow-hidden bg-[#EDF9F6]">
+                <div className="relative aspect-16/11 overflow-hidden bg-[#EDF9F6]">
                   <img
                     src={project.heroImage}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+                  <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
 
                   {/* Top Category Badge */}
                   <div className="absolute top-3 left-3 flex items-center gap-2">

@@ -38,8 +38,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation, onExploreJourney
           className="w-full h-full object-cover object-center transition-all duration-1000 transform scale-105 ease-out opacity-20 sm:opacity-25"
         />
         {/* Editorial Gradients & Architectural Vignette (Light Theme) */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#F7FCFA] via-[#F7FCFA]/85 to-[#F7FCFA]/50"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-[#F7FCFA] via-[#F7FCFA]/80 to-transparent"></div>
+        <div className="absolute inset-0 bg-linear-to-t from-[#F7FCFA] via-[#F7FCFA]/85 to-[#F7FCFA]/50"></div>
+        <div className="absolute inset-0 bg-linear-to-r from-[#F7FCFA] via-[#F7FCFA]/80 to-transparent"></div>
         {/* Subtle architectural grid lines */}
         <div className="absolute inset-0 bg-light-grid opacity-60 pointer-events-none"></div>
       </div>

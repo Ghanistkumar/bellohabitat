@@ -144,7 +144,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
                   className="text-[12.5px] font-semibold tracking-[0.16em] text-[#1C4039] hover:text-[#007E70] relative py-1 transition-colors group cursor-pointer"
                 >
                   {link.label}
-                  <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#02AE88] transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#02AE88] transition-all duration-300 group-hover:w-full"></span>
                 </a>
               ))}
             </nav>

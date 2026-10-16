@@ -38,7 +38,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 sm:mb-16">
           <div>
             <div className="flex items-center gap-3 mb-3">
-              <span className="w-8 h-[2px] bg-[#02AE88]"></span>
+              <span className="w-8 h-0.5 bg-[#02AE88]"></span>
               <span className="text-xs uppercase tracking-[0.28em] text-[#007E70] font-mono font-bold">
                 OUR PRACTICES & ATELIER DISCIPLINES
               </span>
@@ -71,9 +71,9 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
               Bello Habitat (Architecture)
             </button>
             <button
-              onClick={() => setActiveCategory('vastukala')}
+              onClick={() => setActiveCategory('Vaastukalaa')}
               className={`px-3 sm:px-4 py-2 text-[11px] sm:text-xs font-bold tracking-wider uppercase transition-all whitespace-nowrap cursor-pointer ${
-                activeCategory === 'vastukala'
+                activeCategory === 'Vaastukalaa'
                   ? 'bg-[#007E70] text-white shadow-sm'
                   : 'text-[#1C4039] hover:text-[#007E70]'
               }`}
@@ -86,7 +86,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
         {/* Dynamic Editorial Layout: Left Interactive Service Catalog + Right Active Feature Inspector */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left Column: Interactive Service List */}
-          <div className="lg:col-span-6 space-y-3 max-h-[500px] sm:max-h-[600px] lg:max-h-[750px] overflow-y-auto pr-1">
+          <div className="lg:col-span-6 space-y-3 max-h-125 sm:max-h-150 lg:max-h-187.5 overflow-y-auto pr-1">
             {filteredServices.map((service, idx) => {
               const isSelected = service.id === selectedServiceId;
               return (
@@ -136,14 +136,14 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
           <div id="service-inspector" className="lg:col-span-6 lg:sticky lg:top-28">
             <div className="bg-white text-[#0A2E28] border-2 border-[#D4F0E8] p-5 sm:p-8 shadow-xl relative">
               {/* Active Image Showcase */}
-              <div className="relative aspect-[16/10] overflow-hidden bg-[#EDF9F6] border border-[#D4F0E8] mb-6">
+              <div className="relative aspect-16/10 overflow-hidden bg-[#EDF9F6] border border-[#D4F0E8] mb-6">
                 <img
                   src={activeService.image}
                   alt={activeService.name}
                   key={activeService.id}
                   className="w-full h-full object-cover transition-all duration-700 animate-fade-in"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent"></div>
                 <div className="absolute bottom-3 left-3 right-3 flex justify-between items-center text-xs">
                   <span className="bg-[#007E70] text-white font-mono text-[10px] uppercase px-2.5 py-1 font-bold shadow-sm">
                     {activeService.divisionLabel}

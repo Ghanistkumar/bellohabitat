@@ -141,7 +141,7 @@ END:VCALENDAR`;
             LET'S CREATE SOMETHING TIMELESS.
           </h2>
           <p className="text-sm sm:text-base text-[#2D5A50] font-normal leading-relaxed">
-            Schedule a private architectural consultation at our Chandkheda design studio or arrange an artisan walkthrough at our Nana Chiloda woodcraft atelier.
+            Schedule a private architectural consultation at our Chandkheda design studio or arrange an artisan walkthrough at our Nana Chiloda manufacturing atelier.
           </p>
         </div>
 
@@ -353,7 +353,7 @@ END:VCALENDAR`;
                   rows={4}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  placeholder="Share details regarding your plot area, family requirements, architectural style preference, or custom temple/woodcraft requirements..."
+                  placeholder="Share details regarding your plot area, family requirements, architectural style preference, or custom temple/manufacturing requirements..."
                   className="w-full bg-[#F7FCFA] border border-[#D4F0E8] focus:border-[#02AE88] focus:bg-white p-4 text-sm text-[#0A2E28] placeholder-[#7A9E97] outline-none transition-colors"
                 ></textarea>
               </div>

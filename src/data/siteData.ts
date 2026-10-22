@@ -69,7 +69,7 @@ export const COMPANY_INFO = {
     hours: "Mon – Sat: 10:00 AM – 7:00 PM (By Appointment)"
   },
   workshop: {
-    title: "Vaastukalaa Woodcraft Atelier & Workshop",
+    title: "Vaastukalaa manufacturing Atelier & Workshop",
     address: "89, Sankalp Industrial Park, Opposite Ekta Industrial Park, Nana Chiloda, Ahmedabad",
     landmark: "Nana Chiloda Industrial Corridor",
     hours: "Mon – Sat: 9:00 AM – 6:30 PM (Atelier Visits by Prior Appointment)"
@@ -90,7 +90,7 @@ export const JOURNEY_MILESTONES: JourneyMilestone[] = [
     subtitle: "Artisanal Woodworking & Traditional Roots",
     category: "Roots",
     description: "Deep in the cultural heartlands of Gujarat, our journey began with master carvers, fragrant raw teakwood logs, and hand chisels passed through generations.",
-    detailedStory: "Before modern computer-aided design or industrialized joinery, our lineage took form in humble wooden workshops. Each log was selected by hand for its grain density and seasonal curing, governed by the time-honored principles of indigenous Indian woodcraft.",
+    detailedStory: "Before modern computer-aided design or industrialized joinery, our lineage took form in humble wooden workshops. Each log was selected by hand for its grain density and seasonal curing, governed by the time-honored principles of indigenous Indian manufacturing.",
     image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
     craftFocus: ["Aged Teak Selection", "Classical Hand Chisels", "Indigenous Joinery"],
     locationTag: "Ahmedabad Craft Quarter"
@@ -105,7 +105,7 @@ export const JOURNEY_MILESTONES: JourneyMilestone[] = [
     detailedStory: "The workshop developed mastery in multi-layered relief carvings, floral arabesques, and intricate temple pillars. The generational knowledge of how wood breathes, responds to climate, and holds sacred energy became an instinctual heritage.",
     image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80",
     craftFocus: ["High-Relief Floral Carving", "Temple Shikhar Geometries", "Natural Oil Rubs"],
-    locationTag: "Old Haveli Woodcraft Tradition"
+    locationTag: "Old Haveli manufacturing Tradition"
   },
   {
     step: "03",
@@ -152,7 +152,7 @@ export const JOURNEY_MILESTONES: JourneyMilestone[] = [
     description: "A rare symbiosis: cutting-edge modern architectural volumes enriched with deeply tactile, custom-carved woodwork from our own atelier.",
     detailedStory: "Unlike standard architectural firms that outsource finishes to generic contractors, Bello Habitat seamlessly coordinates between our Chandkheda design studio and our Nana Chiloda craft workshop. Modern minimalism is elevated by artisanal depth.",
     image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
-    craftFocus: ["Bespoke Interior Habitations", "Integrated Woodcraft Art", "Sustainable Indian Living"],
+    craftFocus: ["Bespoke Interior Habitations", "Integrated manufacturing Art", "Sustainable Indian Living"],
     locationTag: "Ahmedabad & Gujarat"
   },
   {
@@ -700,7 +700,7 @@ export const PROCESS_STEPS = [
     step: "06",
     name: "DELIVER",
     subtitle: "The Living Habitation",
-    description: "Final acoustic and lighting tuning, installation of heirloom woodcraft, and seamless handover of your timeless space."
+    description: "Final acoustic and lighting tuning, installation of heirloom manufacturing, and seamless handover of your timeless space."
   }
 ];
 

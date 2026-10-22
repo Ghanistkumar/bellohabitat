@@ -20,12 +20,12 @@ A luxury editorial digital experience designed and built for **Bello Habitat Con
 ## ✨ Key Architectural & Editorial Features
 
 1. **Cinematic Hero**:
-   - High-impact visual duality switcher: Toggle between *Contemporary Architecture* and *Vaastukalaa Woodcraft*.
+   - High-impact visual duality switcher: Toggle between *Contemporary Architecture* and *Vaastukalaa manufacturing*.
    - Dynamic typography, dual conversion CTAs, and contextual active visual captions.
 
 2. **Editorial Introduction**:
    - *"BUILT ON CRAFT. EVOLVED THROUGH DESIGN."*
-   - Explains the evolution from generational Gujarat woodcraft into a multidisciplinary architecture consultancy.
+   - Explains the evolution from generational Gujarat manufacturing into a multidisciplinary architecture consultancy.
    - Transparent heritage note regarding 45+ years of family craft lineage.
 
 3. **Our Journey (The 01–07 Chronicle)**:
@@ -59,7 +59,7 @@ A luxury editorial digital experience designed and built for **Bello Habitat Con
 8. **Featured Projects & Project Detail Modal**:
    - Editorial magazine-style grid with variable card sizing.
    - Category filtering across Architecture, Interiors, Traditional Craft, Woodwork, Temples, Commercial, Residential.
-   - Modal inspection with project story ("The Idea"), architectural approach, atelier woodcraft details, and multi-angle photo gallery.
+   - Modal inspection with project story ("The Idea"), architectural approach, atelier manufacturing details, and multi-angle photo gallery.
 
 9. **Architectural Process**:
    - 6-stage workflow: `01 Discover → 02 Envision → 03 Design → 04 Craft → 05 Execute → 06 Deliver`.
@@ -75,7 +75,7 @@ A luxury editorial digital experience designed and built for **Bello Habitat Con
     - Reference code generation, summary recap, calendar export (`.ics`), and transparent disclosure of frontend readiness for CRM / email integrations.
 
 13. **Contact & Spatial Map Explorer**:
-    - Dual venue viewer: Chandkheda Design Studio vs Nana Chiloda Woodcraft Workshop with direct Google Maps navigation links.
+    - Dual venue viewer: Chandkheda Design Studio vs Nana Chiloda manufacturing Workshop with direct Google Maps navigation links.
 
 14. **Mobile Optimization**:
     - Sticky bottom conversion bar with direct Call, WhatsApp, and Consultation shortcuts.

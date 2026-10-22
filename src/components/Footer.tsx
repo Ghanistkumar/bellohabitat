@@ -111,7 +111,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
             </ul>
           </div>
 
-          {/* Vaastukalaa Woodcraft Division */}
+          {/* Vaastukalaa manufacturing Division */}
           <div className="lg:col-span-3">
             <span className="text-[11px] font-mono uppercase tracking-[0.24em] text-[#3DCBA8] font-bold block mb-4">
               VASTUKALA ATELIER

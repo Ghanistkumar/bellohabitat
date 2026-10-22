@@ -9,7 +9,7 @@ interface HeroProps {
 }
 
 export const Hero: React.FC<HeroProps> = ({ onOpenConsultation, onExploreJourney }) => {
-  const [activeVisualMode, setActiveVisualMode] = useState<'architecture' | 'woodcraft'>('architecture');
+  const [activeVisualMode, setActiveVisualMode] = useState<'architecture' | 'manufacturing'>('architecture');
 
   const heroModes = {
     architecture: {
@@ -18,10 +18,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation, onExploreJourney
       caption: "Modern monolithic architecture in Gujarat balanced with climate-responsive light and natural stone.",
       focus: "Spatial Flow • Minimalist Form • Vastu Geometry"
     },
-    woodcraft: {
-      tag: "Vaastukalaa HAND-CARVED WOODCRAFT",
+    manufacturing: {
+      tag: "Vaastukalaa HAND-CARVED manufacturing",
       image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=2000&q=85",
-      caption: "Seasoned CP Teakwood hand-carved in our Nana Chiloda atelier using 45+ years of traditional Gujarati woodcraft lineage.",
+      caption: "Seasoned CP Teakwood hand-carved in our Nana Chiloda atelier using 45+ years of traditional Gujarati manufacturing lineage.",
       focus: "Aged Teak • Classical Chisels • Sangeda Woodturning"
     }
   };
@@ -72,15 +72,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation, onExploreJourney
               <span>Contemporary Architecture</span>
             </button>
             <button
-              onClick={() => setActiveVisualMode('woodcraft')}
+              onClick={() => setActiveVisualMode('manufacturing')}
               className={`flex-1 sm:flex-none justify-center px-2.5 sm:px-3 py-1.5 transition-all duration-300 flex items-center gap-1.5 cursor-pointer text-[10px] sm:text-[10.5px] tracking-wider uppercase font-bold ${
-                activeVisualMode === 'woodcraft'
+                activeVisualMode === 'manufacturing'
                   ? 'bg-[#007E70] text-white shadow-sm'
                   : 'text-[#1C4039] hover:text-[#007E70]'
               }`}
             >
               <Sparkles className="w-3 h-3 text-[#02AE88]" />
-              <span>Vastukala Woodcraft</span>
+              <span>Vastukala manufacturing</span>
             </button>
           </div>
         </div>

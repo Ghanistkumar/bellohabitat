@@ -68,7 +68,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenConsultati
                     <p className="leading-relaxed">
                       306, Ishaan Square, Near Tapovan Circle,<br />
                       Tapovan Circle to Visat Circle Road,<br />
-                      Chandkheda, Ahmedabad – 382424, Gujarat, India.
+                      Chandkheda, Ahmedabad West– 382424, Gujarat, India.
                     </p>
                     <span className="text-[11px] text-[#406860] font-mono mt-1 block">
                       Landmark: Between Tapovan Circle & Visat Circle
@@ -154,10 +154,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenConsultati
                     <p className="leading-relaxed">
                       89, Sankalp Industrial Park,<br />
                       Opposite Ekta Industrial Park,<br />
-                      Nana Chiloda, Ahmedabad, Gujarat, India.
+                      Nana Chiloda, Ahmedabad East, Gujarat, India.
                     </p>
                     <span className="text-[11px] text-[#406860] font-mono mt-1 block">
-                      Location: Nana Chiloda Industrial Woodcraft Zone
+                      Location: Nana Chiloda Industrial manufacturing Zone
                     </span>
                   </div>
                 </div>
@@ -216,19 +216,17 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenConsultati
             <div className="inline-flex p-0.5 bg-[#EDF9F6] border border-[#D4F0E8] text-xs font-mono">
               <button
                 onClick={() => setActiveVenue('office')}
-                className={`px-3 py-1 cursor-pointer transition-all ${
-                  activeVenue === 'office' ? 'bg-[#007E70] text-white font-bold' : 'text-[#406860] hover:text-[#007E70]'
-                }`}
+                className={`px-3 py-1 cursor-pointer transition-all ${activeVenue === 'office' ? 'bg-[#007E70] text-white font-bold' : 'text-[#406860] hover:text-[#007E70]'
+                  }`}
               >
-                Chandkheda Office
+                Ahmedabad West
               </button>
               <button
                 onClick={() => setActiveVenue('workshop')}
-                className={`px-3 py-1 cursor-pointer transition-all ${
-                  activeVenue === 'workshop' ? 'bg-[#007E70] text-white font-bold' : 'text-[#406860] hover:text-[#007E70]'
-                }`}
+                className={`px-3 py-1 cursor-pointer transition-all ${activeVenue === 'workshop' ? 'bg-[#007E70] text-white font-bold' : 'text-[#406860] hover:text-[#007E70]'
+                  }`}
               >
-                Nana Chiloda Workshop
+                Ahmedabad East
               </button>
             </div>
           </div>

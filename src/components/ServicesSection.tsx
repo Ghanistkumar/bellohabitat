@@ -78,7 +78,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                   : 'text-[#1C4039] hover:text-[#007E70]'
               }`}
             >
-              Vaastukalaa (Woodcraft)
+              Vaastukalaa (manufacturing)
             </button>
           </div>
         </div>

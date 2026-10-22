@@ -92,7 +92,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
             <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#02AE88] animate-pulse"></span>
             <span>AHMEDABAD, GUJARAT</span>
             <span className="text-[#3DCBA8]">•</span>
-            <span className="text-[#E0F5F0] font-normal">ARCHITECTURE & VASTUKALA WOODCRAFT ATELIER</span>
+            <span className="text-[#E0F5F0] font-normal">ARCHITECTURE & VASTUKALA manufacturing ATELIER</span>
           </div>
           <div className="hidden sm:flex items-center gap-4 text-[#E0F5F0] text-[11px] tracking-widest">
             <a href="tel:+918128194663" className="hover:text-[#02AE88] transition-colors flex items-center gap-1.5">
@@ -222,7 +222,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
                 <span>AHMEDABAD STUDIOS</span>
               </div>
               <p className="text-[11px] leading-relaxed text-[#4D756E]">
-                Chandkheda Design Studio & Nana Chiloda Woodcraft Atelier.
+                Chandkheda Design Studio & Nana Chiloda manufacturing Atelier.
               </p>
               <div className="flex flex-col gap-1 text-[11px]">
                 <a href="tel:+918128194663" className="hover:text-[#007E70] font-medium">+91 81281 94663</a>

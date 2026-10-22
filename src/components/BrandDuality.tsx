@@ -52,7 +52,7 @@ export const BrandDuality: React.FC = () => {
                 activeSide === 'Vaastukalaa' ? 'bg-[#007E70] text-white shadow-sm' : 'text-[#1C4039] hover:text-[#007E70]'
               }`}
             >
-              Vaastukalaa (Woodcraft Atelier)
+              Vaastukalaa (manufacturing Atelier)
             </button>
           </div>
         </div>

@@ -122,7 +122,7 @@ export const IntroSection: React.FC<IntroSectionProps> = ({ onOpenConsultation, 
                 <div className="aspect-4/5 overflow-hidden bg-[#EDF9F6]">
                   <img
                     src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
-                    alt="Bello Habitat architectural dialogue and woodcraft harmony"
+                    alt="Bello Habitat architectural dialogue and manufacturing harmony"
                     className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                   />
                 </div>

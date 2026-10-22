@@ -24,7 +24,7 @@ export const ProcessSection: React.FC = () => {
             THE ARCHITECTURAL PROCESS
           </h2>
           <p className="text-sm sm:text-base text-[#1C4039] font-normal leading-relaxed">
-            From early spiritual and spatial dialogues to final on-site woodcraft joinery, every commission moves through a disciplined, transparent six-stage workflow.
+            From early spiritual and spatial dialogues to final on-site manufacturing joinery, every commission moves through a disciplined, transparent six-stage workflow.
           </p>
         </div>
 

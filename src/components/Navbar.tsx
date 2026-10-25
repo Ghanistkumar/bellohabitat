@@ -112,13 +112,17 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between gap-2">
             {/* Brand Logo & Craft Division Mark */}
-            <a 
+            <a
               href={isHomePage ? '#hero' : '/'}
               onClick={(e) => { if (isHomePage) handleLinkClick(e, 'HOME', '#hero'); }}
               className="flex items-center gap-3.5 group text-left cursor-pointer"
             >
-              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-none border-2 border-[#02AE88] bg-[#007E70] flex items-center justify-center text-white shadow-sm transition-transform duration-300 group-hover:scale-105">
-                <span className="font-bold text-xl sm:text-2xl tracking-wider text-white">B</span>
+              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-none border-2 border-[#02AE88] bg-[#007E70] flex items-center justify-center shadow-sm transition-transform duration-300 group-hover:scale-105 overflow-hidden">
+                <img
+                  src="/logo.png"
+                  alt="Bello Logo"
+                  className="w-full h-full object-contain p-1"
+                />
               </div>
               <div className="flex flex-col">
                 <span className="text-lg sm:text-xl font-bold tracking-[0.06em] text-[#007E70] leading-tight group-hover:text-[#02AE88] transition-colors">

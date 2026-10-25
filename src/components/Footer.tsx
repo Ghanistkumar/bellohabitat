@@ -54,8 +54,12 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
           {/* Brand Info */}
           <div className="lg:col-span-4 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 border-2 border-[#02AE88] bg-[#00665B] flex items-center justify-center text-white font-bold text-2xl">
-                B
+              <div className="w-10 h-10 border-2 border-[#02AE88] bg-[#00665B] flex items-center justify-center overflow-hidden">
+                <img
+                  src="/logo.png"
+                  alt="Bello Habitat Logo"
+                  className="w-full h-full object-contain p-1"
+                />
               </div>
               <div>
                 <span className="text-xl font-bold tracking-wider text-white block">

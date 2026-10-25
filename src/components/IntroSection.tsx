@@ -121,7 +121,7 @@ export const IntroSection: React.FC<IntroSectionProps> = ({ onOpenConsultation, 
               <div className="relative border border-[#D4F0E8] p-3 bg-white shadow-xl">
                 <div className="aspect-4/5 overflow-hidden bg-[#EDF9F6]">
                   <img
-                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+                    src="/intro.jpeg"
                     alt="Bello Habitat architectural dialogue and manufacturing harmony"
                     className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                   />
@@ -129,7 +129,7 @@ export const IntroSection: React.FC<IntroSectionProps> = ({ onOpenConsultation, 
 
                 {/* Editorial Photo Caption */}
                 <div className="pt-3 px-1 flex justify-between items-baseline text-[11px] text-[#4D756E]">
-                  <span className="font-mono uppercase tracking-wider font-semibold">Fig. 01 — Architectural Synthesis</span>
+                  <span className="font-mono uppercase tracking-wider font-semibold">Fig. 01 — Architectural </span>
                   <span>Ahmedabad, Gujarat</span>
                 </div>
               </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowUpRight, X } from 'lucide-react';
-
+import { Link, useLocation } from 'react-router-dom';
 
 interface FooterProps {
   onOpenConsultation: () => void;
@@ -8,9 +8,15 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
   const [legalModalOpen, setLegalModalOpen] = useState<'privacy' | 'terms' | null>(null);
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
+    if (!isHomePage) {
+      window.location.href = '/#' + id;
+      return;
+    }
     const el = document.getElementById(id);
     if (el) {
       const navOffset = 80;
@@ -20,125 +26,117 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
   };
 
   return (
-    <footer className="bg-[#007E70] text-white relative border-t border-[#006B5F] overflow-hidden">
-      {/* Background Architectural Grid */}
-      <div className="absolute inset-0 bg-dark-grid opacity-20 pointer-events-none"></div>
+    <footer className="bg-[#007E70] text-white relative overflow-hidden">
+      {/* Background Grid */}
+      <div className="absolute inset-0 bg-dark-grid opacity-15 pointer-events-none"></div>
 
-      {/* Top Banner Tagline */}
-      <div className="border-b border-[#006B5F] py-14 sm:py-20 relative z-10 bg-[#00665B]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="text-xs font-mono uppercase tracking-[0.3em] text-[#3DCBA8] block mb-3 font-bold">
-            THE LIVING PRINCIPLE
-          </span>
-          <h2 className="text-3xl sm:text-5xl lg:text-6xl text-white font-bold tracking-tight max-w-4xl mx-auto leading-tight">
-            “WE DESIGN YOUR LIFESTYLE IN BETTER WAYS.”
-          </h2>
-          <p className="text-xs sm:text-sm text-[#E0F5F0] italic mt-4">
-            Where generations of Indian craftsmanship meet contemporary architecture.
-          </p>
-          <div className="mt-8">
-            <button
-              onClick={onOpenConsultation}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#02AE88] hover:bg-white text-white hover:text-[#007E70] font-bold text-xs tracking-[0.22em] uppercase transition-all shadow-xl cursor-pointer"
-            >
-              <span>COMMISSION A CONSULTATION</span>
-              <ArrowUpRight className="w-4 h-4" />
-            </button>
+      {/* Compact CTA Strip */}
+      <div className="border-b border-[#006B5F] py-8 sm:py-10 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div>
+            <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-white">
+              Ready to create something timeless?
+            </h2>
+            <p className="text-xs text-[#B8E6DB] mt-1">
+              Architecture • Interiors • Vastu • Handcrafted Woodwork
+            </p>
           </div>
+          <button
+            onClick={onOpenConsultation}
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#02AE88] hover:bg-white text-white hover:text-[#007E70] font-bold text-xs tracking-[0.18em] uppercase transition-all shadow-md cursor-pointer shrink-0"
+          >
+            <span>BOOK A CONSULTATION</span>
+            <ArrowUpRight className="w-3.5 h-3.5" />
+          </button>
         </div>
       </div>
 
-      {/* Main Footer Links & Information Grid */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8">
-          {/* Brand Info */}
-          <div className="lg:col-span-4 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 border-2 border-[#02AE88] bg-[#00665B] flex items-center justify-center overflow-hidden">
-                <img
-                  src="/logo.png"
-                  alt="Bello Habitat Logo"
-                  className="w-full h-full object-contain p-1"
-                />
+      {/* Main Footer Content — Compact */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 relative z-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Brand */}
+          <div className="space-y-3">
+            <div className="flex items-center gap-2.5">
+              <div className="w-8 h-8 border border-[#02AE88] bg-[#00665B] flex items-center justify-center overflow-hidden">
+                <img src="/logo.png" alt="Bello Habitat Logo" className="w-full h-full object-contain p-0.5" />
               </div>
               <div>
-                <span className="text-xl font-bold tracking-wider text-white block">
-                  BELLO HABITAT
-                </span>
-                <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-[#3DCBA8] font-bold">
-                  CONSULTANCY • VASTUKALA
-                </span>
+                <span className="text-sm font-bold tracking-wider text-white block leading-tight">BELLO HABITAT</span>
+                <span className="text-[9px] font-mono uppercase tracking-[0.18em] text-[#3DCBA8] font-bold">CONSULTANCY • VASTUKALA</span>
               </div>
             </div>
-
-            <p className="text-xs sm:text-sm text-[#E0F5F0] font-normal leading-relaxed pr-4">
-              Modern architecture, interior design, landscape, Vastu and turnkey project management consultancy based in Ahmedabad, Gujarat, carrying forward 45+ years of traditional woodworking mastery.
+            <p className="text-[11px] text-[#D4F0E8] leading-relaxed">
+              Architecture, interiors & handcrafted woodwork consultancy in Ahmedabad with 45+ years of craft heritage*.
             </p>
+          </div>
 
-            <div className="pt-2 text-xs text-[#D4F0E8] space-y-1">
-              <div>• Studio: 306, Ishaan Square, Chandkheda, Ahmedabad</div>
-              <div>• Atelier: 89, Sankalp Industrial Park, Nana Chiloda, Ahmedabad</div>
-              <div>• Inquiries: <a href="tel:+918128194663" className="text-[#3DCBA8] font-bold hover:underline">+91 81281 94663</a> / <a href="tel:+919316535404" className="text-[#3DCBA8] font-bold hover:underline">+91 93165 35404</a></div>
-              <div>• Email: <a href="mailto:himanshu@bellohc.com" className="text-[#3DCBA8] font-bold hover:underline">himanshu@bellohc.com</a></div>
+          {/* Quick Links */}
+          <div>
+            <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-[#3DCBA8] font-bold block mb-3">QUICK LINKS</span>
+            <ul className="space-y-1.5 text-[11px] text-[#E0F5F0]">
+              <li>
+                <a href="#hero" onClick={(e) => scrollToSection(e, 'hero')} className="hover:text-[#3DCBA8] transition-colors cursor-pointer">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#journey" onClick={(e) => scrollToSection(e, 'journey')} className="hover:text-[#3DCBA8] transition-colors cursor-pointer">
+                  Our Journey
+                </a>
+              </li>
+              <li>
+                <Link to="/services" className="hover:text-[#3DCBA8] transition-colors">Services</Link>
+              </li>
+              <li>
+                <Link to="/craftsmanship" className="hover:text-[#3DCBA8] transition-colors">Craftsmanship</Link>
+              </li>
+              <li>
+                <Link to="/projects" className="hover:text-[#3DCBA8] transition-colors">Projects</Link>
+              </li>
+              <li>
+                <Link to="/contact" className="hover:text-[#3DCBA8] transition-colors">Contact</Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-[#3DCBA8] font-bold block mb-3">CONTACT</span>
+            <div className="space-y-1.5 text-[11px] text-[#D4F0E8]">
+              <div>
+                <a href="tel:+918128194663" className="text-[#3DCBA8] font-bold hover:underline">+91 81281 94663</a>
+                {' / '}
+                <a href="tel:+919316535404" className="text-[#3DCBA8] font-bold hover:underline">+91 93165 35404</a>
+              </div>
+              <div>
+                <a href="mailto:himanshu@bellohc.com" className="text-[#3DCBA8] font-bold hover:underline">himanshu@bellohc.com</a>
+              </div>
+              <div className="text-[#B8E6DB] pt-1">Mon – Sat: 10 AM – 7 PM</div>
             </div>
           </div>
 
-          {/* Navigation Links */}
-          <div className="lg:col-span-2">
-            <span className="text-[11px] font-mono uppercase tracking-[0.24em] text-[#3DCBA8] font-bold block mb-4">
-              NAVIGATION
-            </span>
-            <ul className="space-y-2.5 text-xs text-[#E0F5F0]">
-              <li><a href="#hero" onClick={(e) => scrollToSection(e, 'hero')} className="hover:text-[#3DCBA8] transition-colors">Home</a></li>
-              <li><a href="#journey" onClick={(e) => scrollToSection(e, 'journey')} className="hover:text-[#3DCBA8] transition-colors">Our Journey</a></li>
-              <li><a href="#services" onClick={(e) => scrollToSection(e, 'services')} className="hover:text-[#3DCBA8] transition-colors">Services</a></li>
-              <li><a href="#craftsmanship" onClick={(e) => scrollToSection(e, 'craftsmanship')} className="hover:text-[#3DCBA8] transition-colors">Craftsmanship</a></li>
-              <li><a href="#projects" onClick={(e) => scrollToSection(e, 'projects')} className="hover:text-[#3DCBA8] transition-colors">Projects</a></li>
-              <li><a href="#about" onClick={(e) => scrollToSection(e, 'about')} className="hover:text-[#3DCBA8] transition-colors">About Us</a></li>
-              <li><a href="#contact" onClick={(e) => scrollToSection(e, 'contact')} className="hover:text-[#3DCBA8] transition-colors">Contact</a></li>
-            </ul>
-          </div>
-
-          {/* Architectural Services */}
-          <div className="lg:col-span-3">
-            <span className="text-[11px] font-mono uppercase tracking-[0.24em] text-[#3DCBA8] font-bold block mb-4">
-              BELLO HABITAT DISCIPLINES
-            </span>
-            <ul className="space-y-2.5 text-xs text-[#E0F5F0]">
-              <li>Architecture Consultancy</li>
-              <li>Luxury Interior Design</li>
-              <li>Landscape Architecture</li>
-              <li>Vastu Shastra Planning</li>
-              <li>Project Management Consultancy (PMC)</li>
-              <li>Commercial Interior Architecture</li>
-              <li>Renovation & Structural Retrofit</li>
-            </ul>
-          </div>
-
-          {/* Vaastukalaa manufacturing Division */}
-          <div className="lg:col-span-3">
-            <span className="text-[11px] font-mono uppercase tracking-[0.24em] text-[#3DCBA8] font-bold block mb-4">
-              VASTUKALA ATELIER
-            </span>
-            <ul className="space-y-2.5 text-xs text-[#E0F5F0]">
-              <li>Traditional Temples & Mandirs</li>
-              <li>Heirloom Wooden Swings (Jhula)</li>
-              <li>Carved Gujarati Jharokhas</li>
-              <li>Sangeda Rotational Woodturning</li>
-              <li>Bespoke Handcrafted Furniture</li>
-              <li>Traditional Chariots (Rath)</li>
-              <li>Custom Architectural Wood Carving</li>
-            </ul>
+          {/* Locations */}
+          <div>
+            <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-[#3DCBA8] font-bold block mb-3">LOCATIONS</span>
+            <div className="space-y-2 text-[11px] text-[#D4F0E8]">
+              <div>
+                <span className="font-semibold text-white text-[10px]">Studio:</span>{' '}
+                306, Ishaan Square, Chandkheda, Ahmedabad
+              </div>
+              <div>
+                <span className="font-semibold text-white text-[10px]">Atelier:</span>{' '}
+                89, Sankalp Industrial Park, Nana Chiloda, Ahmedabad
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Bottom Strip */}
-        <div className="mt-16 pt-8 border-t border-[#006B5F] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#D4F0E8]">
+        <div className="mt-8 pt-5 border-t border-[#006B5F] flex flex-col sm:flex-row items-center justify-between gap-3 text-[10px] text-[#B8E6DB]">
           <div>
-            © {new Date().getFullYear()} Bello Habitat Consultancy & Vaastukalaa. All rights reserved.
+            © {new Date().getFullYear()} Bello Habitat Consultancy & Vastukala. All rights reserved.
           </div>
-
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-4">
             <button
               onClick={() => setLegalModalOpen('privacy')}
               className="hover:text-[#3DCBA8] transition-colors cursor-pointer"
@@ -155,12 +153,12 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
           </div>
         </div>
 
-        <div className="mt-4 text-center text-[10px] text-[#A8EDE0] font-mono">
-          * Note: 45+ years of craft legacy refers to generational family woodworking and traditional wood carving heritage in Gujarat.
+        <div className="mt-2 text-center text-[9px] text-[#7EBFB4] font-mono">
+          * 45+ years refers to generational family woodworking heritage in Gujarat.
         </div>
       </div>
 
-      {/* Legal Information Modal */}
+      {/* Legal Modal */}
       {legalModalOpen && (
         <div className="fixed inset-0 z-50 bg-[#007E70]/80 backdrop-blur-sm flex items-center justify-center p-4">
           <div className="bg-white text-[#0A2E28] max-w-xl w-full p-8 border-2 border-[#02AE88] shadow-2xl relative max-h-[85vh] overflow-y-auto">
@@ -191,7 +189,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
               ) : (
                 <>
                   <p>
-                    All architectural concepts, custom woodworking designs, technical blueprints, and website content are proprietary to Bello Habitat Consultancy and the Vaastukalaa craft atelier.
+                    All architectural concepts, custom woodworking designs, technical blueprints, and website content are proprietary to Bello Habitat Consultancy and the Vastukala craft atelier.
                   </p>
                   <p>
                     All architectural commissions and bespoke woodworking orders are governed by written contracts, project milestone schedules, and PMC agreements executed directly between Bello Habitat Consultancy and the commissioning patron.

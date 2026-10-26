@@ -200,7 +200,7 @@ END:VCALENDAR`;
             <div className="flex items-center gap-2.5 p-3.5 bg-[#EDF9F6] border border-[#02AE88] rounded text-xs text-[#007E70] font-medium mb-6">
               <Mail className="w-4 h-4 text-[#02AE88] shrink-0" />
               <span>
-                All inquiry details have been sent!!.
+                All inquiry details have been mailed to <strong>himanshu@bellohc.com</strong> ({emailStatusNote}).
               </span>
             </div>
 

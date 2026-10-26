@@ -12,7 +12,7 @@ const PAGE_ROUTES: Record<string, string> = {
   CRAFTSMANSHIP: '/craftsmanship',
   PROJECTS: '/projects',
   CONTACT: '/contact',
-  APPOINTMENT: '/appointent'
+  APPOINTMENT: '/appointment'
 };
 
 export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Calendar, CheckCircle2, ArrowUpRight, ShieldCheck } from 'lucide-react';
-
+import { Calendar, CheckCircle2, ArrowUpRight, Mail, AlertCircle, Loader2 } from 'lucide-react';
 
 interface AppointmentSectionProps {
   prefilledProjectType?: string;
@@ -28,7 +27,9 @@ export const AppointmentSection: React.FC<AppointmentSectionProps> = ({
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submissionError, setSubmissionError] = useState<string | null>(null);
   const [bookingRef, setBookingRef] = useState('');
+  const [emailStatusNote, setEmailStatusNote] = useState<string>('Inquiry dispatched directly to himanshu@bellohc.com via Nodemailer');
 
   const projectTypes = [
     'Architecture',
@@ -80,18 +81,48 @@ export const AppointmentSection: React.FC<AppointmentSectionProps> = ({
     return Object.keys(errs).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
 
     setIsSubmitting(true);
-    // Simulate frontend submission processing
-    setTimeout(() => {
-      const ref = `BHC-${Math.floor(100000 + Math.random() * 900000)}`;
-      setBookingRef(ref);
-      setIsSubmitting(false);
+    setSubmissionError(null);
+
+    const generatedRef = `BHC-${Math.floor(100000 + Math.random() * 900000)}`;
+
+    try {
+      const response = await fetch('/api/consultation', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formData,
+          bookingRef: generatedRef,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.error || 'Failed to dispatch consultation email.');
+      }
+
+      setBookingRef(result.bookingRef || generatedRef);
+      if (result.message) {
+        setEmailStatusNote(result.message);
+      }
       setIsSubmitted(true);
-    }, 800);
+    } catch (err: unknown) {
+      console.error('Consultation mail dispatch error:', err);
+      const errMsg =
+        err instanceof Error
+          ? err.message
+          : 'Could not connect to the mailer service. Please try again.';
+      setSubmissionError(errMsg);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleDownloadCalendar = () => {
@@ -103,7 +134,7 @@ UID:${bookingRef}@bellohc.com
 DTSTAMP:${new Date().toISOString().replace(/[-:]/g, '').split('.')[0]}Z
 DTSTART:${formData.preferredDate.replace(/-/g, '')}T050000Z
 DTEND:${formData.preferredDate.replace(/-/g, '')}T060000Z
-SUMMARY:Consultation: Bello Habitat & Vaastukalaa (${formData.projectType})
+SUMMARY:Consultation: Bello Habitat & Vastukala (${formData.projectType})
 DESCRIPTION:Consultation with Bello Habitat Consultancy for ${formData.fullName} (${formData.projectType}). Reference: ${bookingRef}
 LOCATION:306, Ishaan Square, Tapovan Circle, Chandkheda, Ahmedabad
 STATUS:CONFIRMED
@@ -141,7 +172,7 @@ END:VCALENDAR`;
             LET'S CREATE SOMETHING TIMELESS.
           </h2>
           <p className="text-sm sm:text-base text-[#2D5A50] font-normal leading-relaxed">
-            Schedule a private architectural consultation at our Chandkheda design studio or arrange an artisan walkthrough at our Nana Chiloda manufacturing atelier.
+            Schedule a private architectural consultation at our Chandkheda design studio or arrange an artisan walkthrough at our Nana Chiloda woodcraft atelier.
           </p>
         </div>
 
@@ -165,6 +196,14 @@ END:VCALENDAR`;
               Thank you, {formData.fullName}.
             </h3>
 
+            {/* Nodemailer confirmation notification */}
+            <div className="flex items-center gap-2.5 p-3.5 bg-[#EDF9F6] border border-[#02AE88] rounded text-xs text-[#007E70] font-medium mb-6">
+              <Mail className="w-4 h-4 text-[#02AE88] shrink-0" />
+              <span>
+                All inquiry details have been sent!!.
+              </span>
+            </div>
+
             <p className="text-sm text-[#2D5A50] leading-relaxed mb-6">
               We have recorded your consultation request for <strong className="text-[#007E70] font-bold">{formData.projectType}</strong> on <strong className="text-[#007E70] font-bold">{formData.preferredDate}</strong> ({formData.preferredTime}).
             </p>
@@ -172,13 +211,14 @@ END:VCALENDAR`;
             {/* Recap Box */}
             <div className="p-4 bg-[#F7FCFA] border border-[#D4F0E8] space-y-2 text-xs font-mono text-[#1C4039] mb-6">
               <div><span className="text-[#007E70] font-semibold">PATRON:</span> {formData.fullName} ({formData.phone})</div>
+              <div><span className="text-[#007E70] font-semibold">EMAIL:</span> {formData.email}</div>
               <div><span className="text-[#007E70] font-semibold">LOCATION:</span> {formData.location}</div>
               <div><span className="text-[#007E70] font-semibold">BUDGET TIER:</span> {formData.approximateBudget}</div>
               <div><span className="text-[#007E70] font-semibold">STUDIO VENUE:</span> 306, Ishaan Square, Chandkheda, Ahmedabad</div>
             </div>
 
             <div className="p-4 bg-[#EDF9F6] border-l-4 border-[#02AE88] text-xs text-[#007E70] mb-8 font-medium">
-              * Note: This request is formatted for production CRM / email dispatch. Our principal architect Himanshu will review your brief and call within 24 business hours to confirm your calendar slot.
+              * Note: Our principal architect Himanshu will review your architectural brief and contact you within 24 business hours to confirm your calendar slot.
             </div>
 
             <div className="flex flex-wrap items-center gap-4">
@@ -204,6 +244,20 @@ END:VCALENDAR`;
         ) : (
           /* The Form */
           <form onSubmit={handleSubmit} noValidate className="max-w-4xl bg-white border-2 border-[#D4F0E8] p-6 sm:p-10 lg:p-12 shadow-xl">
+            {/* Error Banner */}
+            {submissionError && (
+              <div className="mb-6 p-4 bg-red-50 border-2 border-red-300 text-red-800 rounded text-xs flex items-start gap-3 animate-fade-in">
+                <AlertCircle className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />
+                <div>
+                  <strong className="block font-bold">Mail Delivery Notice:</strong>
+                  <span>{submissionError}</span>
+                  <div className="mt-2 text-[11px] text-red-700">
+                    You can try submitting again, or reach Himanshu directly via Phone: <a href="tel:+918128194663" className="underline font-bold">+91 81281 94663</a> or WhatsApp: <a href="https://wa.me/918128194663" target="_blank" rel="noreferrer" className="underline font-bold">+91 81281 94663</a>.
+                  </div>
+                </div>
+              </div>
+            )}
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
               {/* Full Name */}
               <div>
@@ -353,19 +407,19 @@ END:VCALENDAR`;
                   rows={4}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  placeholder="Share details regarding your plot area, family requirements, architectural style preference, or custom temple/manufacturing requirements..."
+                  placeholder="Share details regarding your plot area, family requirements, architectural style preference, or custom temple/woodcraft requirements..."
                   className="w-full bg-[#F7FCFA] border border-[#D4F0E8] focus:border-[#02AE88] focus:bg-white p-4 text-sm text-[#0A2E28] placeholder-[#7A9E97] outline-none transition-colors"
                 ></textarea>
               </div>
             </div>
 
-            {/* Note regarding backend readiness */}
-            <div className="mt-6 pt-4 border-t border-[#D4F0E8] flex items-center justify-between text-xs text-[#406860]">
+            {/* Note regarding mailer delivery */}
+            <div className="mt-6 pt-4 border-t border-[#D4F0E8] flex flex-col sm:flex-row sm:items-center justify-between text-xs text-[#406860] gap-2">
               <div className="flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4 text-[#02AE88]" />
-                <span>Frontend validated & ready for CRM / Email / Google Calendar sync.</span>
+                <Mail className="w-4 h-4 text-[#02AE88]" />
+                <span>Connected to Nodemailer service • Directly mailed to <strong>himanshu@bellohc.com</strong></span>
               </div>
-              <span className="hidden sm:inline font-mono font-medium">Chandkheda Studio • Nana Chiloda Atelier</span>
+              <span className="font-mono font-medium">Chandkheda Studio • Nana Chiloda Atelier</span>
             </div>
 
             {/* Submit Button */}
@@ -373,10 +427,13 @@ END:VCALENDAR`;
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full sm:w-auto px-8 py-4 bg-[#02AE88] hover:bg-[#007E70] text-white font-bold text-xs sm:text-sm tracking-[0.22em] uppercase transition-all duration-300 flex items-center justify-center gap-2 shadow-lg cursor-pointer"
+                className="w-full sm:w-auto px-8 py-4 bg-[#02AE88] hover:bg-[#007E70] text-white font-bold text-xs sm:text-sm tracking-[0.22em] uppercase transition-all duration-300 flex items-center justify-center gap-2 shadow-lg cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? (
-                  <span>SCHEDULING...</span>
+                  <>
+                    <Loader2 className="w-4 h-4 animate-spin text-white" />
+                    <span>MAILING TO HIMANSHU@BELLOHC.COM...</span>
+                  </>
                 ) : (
                   <>
                     <span>SCHEDULE A CONSULTATION</span>

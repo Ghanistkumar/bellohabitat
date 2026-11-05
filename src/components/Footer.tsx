@@ -66,7 +66,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
               </div>
             </div>
             <p className="text-[11px] text-[#D4F0E8] leading-relaxed">
-              Architecture, interiors & handcrafted woodwork consultancy in Ahmedabad with 45+ years of craft heritage*.
+              Architecture, interiors & handcrafted woodwork consultancy in Ahmedabad with 54+ Years of craft heritage*.
             </p>
           </div>
 
@@ -134,7 +134,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
         {/* Bottom Strip */}
         <div className="mt-8 pt-5 border-t border-[#006B5F] flex flex-col sm:flex-row items-center justify-between gap-3 text-[10px] text-[#B8E6DB]">
           <div>
-            © {new Date().getFullYear()} Bello Habitat Consultancy & Vastukala. All rights reserved.
+            © {new Date().getFullYear()} Bello Habitat Consultancy . All rights reserved.
           </div>
           <div className="flex items-center gap-4">
             <button
@@ -154,7 +154,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
         </div>
 
         <div className="mt-2 text-center text-[9px] text-[#7EBFB4] font-mono">
-          * 45+ years refers to generational family woodworking heritage in Gujarat.
+          * 54+ Years refers to generational family woodworking heritage in Gujarat.
         </div>
       </div>
 

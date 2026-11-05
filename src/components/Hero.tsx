@@ -21,7 +21,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation, onExploreJourney
     manufacturing: {
       tag: "Vaastukalaa HAND-CARVED manufacturing",
       image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=2000&q=85",
-      caption: "Seasoned CP Teakwood hand-carved in our Nana Chiloda atelier using 45+ years of traditional Gujarati manufacturing lineage.",
+      caption: "Seasoned CP Teakwood hand-carved in our Nana Chiloda atelier using 54+ Years of traditional Gujarati manufacturing lineage.",
       focus: "Aged Teak • Classical Chisels • Sangeda Woodturning"
     }
   };
@@ -50,7 +50,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation, onExploreJourney
           <div className="flex items-center gap-3">
             <span className="w-2.5 h-2.5 bg-[#02AE88] rounded-full animate-pulse"></span>
             <span className="text-[11px] uppercase tracking-[0.24em] text-[#007E70] font-bold">
-              BELLO HABITAT & VASTUKALA • AHMEDABAD
+              BELLO HABITAT COSULTANCY • AHMEDABAD
             </span>
             <span className="hidden md:inline text-[#B8E6DB]">|</span>
             <span className="hidden md:inline text-[11px] text-[#4D756E] tracking-wider font-medium">
@@ -98,9 +98,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation, onExploreJourney
 
           {/* Core Headline */}
           <h1 className="text-3xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.08] tracking-tight text-[#007E70] mb-6 sm:mb-8">
-            CRAFTING SPACES.
+            WE DESIGN YOUR
             <br />
-            <span className="italic font-light text-[#02AE88]">PRESERVING LEGACY.</span>
+            <span className="italic font-light text-[#02AE88]">LIFESTYLE IN BETTER WAYS</span>
           </h1>
 
           {/* Supporting Text */}
@@ -143,7 +143,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation, onExploreJourney
 
           <div className="md:col-span-4 flex items-center gap-6 text-xs text-[#1C4039]">
             <div className="border-l-2 border-[#02AE88] pl-3">
-              <span className="block text-lg text-[#007E70] font-bold">45+ Years</span>
+              <span className="block text-lg text-[#007E70] font-bold">54+ Years</span>
               <span className="text-[10px] tracking-widest uppercase text-[#4D756E]">Woodworking Heritage*</span>
             </div>
             <div className="border-l-2 border-[#02AE88] pl-3">

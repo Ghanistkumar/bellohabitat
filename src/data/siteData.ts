@@ -60,7 +60,7 @@ export const COMPANY_INFO = {
   tagline: "Where generations of Indian craftsmanship meet contemporary architecture.",
   subTagline: "From hand-carved wood to contemporary habitats.",
   motto: "WE DESIGN YOUR LIFESTYLE IN BETTER WAYS.",
-  legacyYears: "45+",
+  legacyYears: "54+",
   legacyNote: "Carrying forward four decades of family woodworking, temple architecture, and traditional wood carving heritage in Gujarat.",
   office: {
     title: "Design Studio & Consultancy Office",

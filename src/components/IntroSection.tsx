@@ -52,7 +52,7 @@ export const IntroSection: React.FC<IntroSectionProps> = ({ onOpenConsultation, 
                   </div>
                   <div>
                     <span className="text-xs uppercase tracking-[0.2em] font-bold text-[#007E70] block">
-                      45+ YEARS OF CRAFTSMANSHIP*
+                      54+ Years OF CRAFTSMANSHIP*
                     </span>
                     <span className="text-[12px] text-[#4D756E]">
                       Traditional woodworking & handcrafted wood carving lineage

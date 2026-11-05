@@ -9,7 +9,7 @@ A luxury editorial digital experience designed and built for **Bello Habitat Con
 ## 🏛️ Brand & Creative Identity
 
 - **Consultancy Practice**: Bello Habitat Consultancy (Architecture, Interior Design, Landscape, Vastu, Facades, PMC)
-- **Craft Division & Atelier**: Vaastukalaa (45+ Years of Traditional Woodworking Heritage: Temples, Swings/Jhulas, Jharokhas, Sangeda Turnery, Handcrafted Furniture)
+- **Craft Division & Atelier**: Vaastukalaa (54+ Years of Traditional Woodworking Heritage: Temples, Swings/Jhulas, Jharokhas, Sangeda Turnery, Handcrafted Furniture)
 - **Location**: Ahmedabad, Gujarat, India
   - **Design Studio**: 306, Ishaan Square, Tapovan Circle to Visat Circle Road, Chandkheda, Ahmedabad – 382424
   - **Craft Atelier & Workshop**: 89, Sankalp Industrial Park, Opposite Ekta Industrial Park, Nana Chiloda, Ahmedabad
@@ -26,7 +26,7 @@ A luxury editorial digital experience designed and built for **Bello Habitat Con
 2. **Editorial Introduction**:
    - *"BUILT ON CRAFT. EVOLVED THROUGH DESIGN."*
    - Explains the evolution from generational Gujarat manufacturing into a multidisciplinary architecture consultancy.
-   - Transparent heritage note regarding 45+ years of family craft lineage.
+   - Transparent heritage note regarding 54+ Years of family craft lineage.
 
 3. **Our Journey (The 01–07 Chronicle)**:
    - Interactive milestone progression:

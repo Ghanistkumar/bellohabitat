@@ -150,7 +150,7 @@ export const BrandDuality: React.FC = () => {
               </p>
 
               <p className="text-sm text-[#1C4039] leading-relaxed mb-6 font-normal">
-                Carrying 45+ years of traditional woodworking mastery, crafting sacred mandir sanctums, suspended teak jhulas, classical sangeda turnings, and hand-carved architectural details.
+                Carrying 54+ Years of traditional woodworking mastery, crafting sacred mandir sanctums, suspended teak jhulas, classical sangeda turnings, and hand-carved architectural details.
               </p>
 
               <div className="space-y-2.5 pt-2 border-t border-[#B8E6DB]">

@@ -479,27 +479,41 @@ export const PROJECTS_DATA: ProjectItem[] = [
     isFeatured: true
   },
   {
-    id: "sanctum-of-light-mandir",
-    title: "Sanctum of Light — Bespoke Home Mandir",
-    category: "TEMPLES",
-    categoryLabel: "Traditional Sacred Architecture",
-    division: "Vaastukalaa",
-    location: "Sindhu Bhavan Road, Ahmedabad",
-    year: "2023",
-    heroImage: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1400&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=1200&q=80"
-    ],
-    shortDescription: "A temple sanctum sculpted in pure white Makrana marble and hand-carved sagwan timber, with recessed 24k gold leaf accents and sacred Shilpa Shastra proportions.",
-    idea: "A devotional haven created within a luxury penthouse, requiring seamless acoustic isolation from the urban buzz while generating an immediate sense of divine quietude.",
-    designApproach: "Vastu orientations dictated the Northeast placement. The sanctum balances floating minimalist stone pedestals with a handcrafted stepped ceiling dome (shikhar) carved entirely in the Vaastukalaa workshop.",
-    craftsmanship: "Over 600 hours of artisanal hand-carving produced the continuous floral fretwork frieze and lotus medallion, illuminated by soft concealed 2700K warm LED light.",
-    materials: ["Solid Sagwan (Teakwood)", "Makrana Pristine White Marble", "Hand-Beaten Brass Bells", "24K Gold Leaf Inlay"],
-    dimensionsOrArea: "320 sq.ft Sanctum",
-    isFeatured: true
-  },
+  id: "sanctum-of-light-mandir",
+  title: "Sanctum of Light — Bespoke Home Mandir",
+  category: "TEMPLES",
+  categoryLabel: "Traditional Sacred Architecture",
+  division: "Vaastukalaa",
+  location: "Sindhu Bhavan Road, Ahmedabad",
+  year: "2023",
+
+  heroImage: "temples1.jpeg",
+
+  gallery: [
+    "/temples2.jpeg",
+    "/temples3.jpeg",
+    "/temples4.jpeg",
+    // "/images/projects/sanctum-of-light/04.jpg"
+  ],
+
+  shortDescription: "A temple sanctum sculpted in pure white Makrana marble and hand-carved sagwan timber, with recessed 24k gold leaf accents and sacred Shilpa Shastra proportions.",
+
+  idea: "A devotional haven created within a luxury penthouse, requiring seamless acoustic isolation from the urban buzz while generating an immediate sense of divine quietude.",
+
+  designApproach: "Vastu orientations dictated the Northeast placement. The sanctum balances floating minimalist stone pedestals with a handcrafted stepped ceiling dome (shikhar) carved entirely in the Vaastukalaa workshop.",
+
+  craftsmanship: "Over 600 hours of artisanal hand-carving produced the continuous floral fretwork frieze and lotus medallion, illuminated by soft concealed 2700K warm LED light.",
+
+  materials: [
+    "Solid Sagwan (Teakwood)",
+    "Makrana Pristine White Marble",
+    "Hand-Beaten Brass Bells",
+    "24K Gold Leaf Inlay"
+  ],
+
+  dimensionsOrArea: "320 sq.ft Sanctum",
+  isFeatured: true
+},
   {
     id: "the-serene-duplex-interior",
     title: "The Earth & Ash Modern Duplex",

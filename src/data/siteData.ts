@@ -84,17 +84,17 @@ export const COMPANY_INFO = {
 
 export const JOURNEY_MILESTONES: JourneyMilestone[] = [
   {
-    step: "01",
-    era: "The Genesis",
-    title: "THE BEGINNING",
-    subtitle: "Artisanal Woodworking & Traditional Roots",
-    category: "Roots",
-    description: "Deep in the cultural heartlands of Gujarat, our journey began with master carvers, fragrant raw teakwood logs, and hand chisels passed through generations.",
-    detailedStory: "Before modern computer-aided design or industrialized joinery, our lineage took form in humble wooden workshops. Each log was selected by hand for its grain density and seasonal curing, governed by the time-honored principles of indigenous Indian manufacturing.",
-    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-    craftFocus: ["Aged Teak Selection", "Classical Hand Chisels", "Indigenous Joinery"],
-    locationTag: "Ahmedabad Craft Quarter"
-  },
+  step: "01",
+  era: "The Genesis",
+  title: "THE BEGINNING",
+  subtitle: "Artisanal Woodworking & Traditional Roots",
+  category: "Roots",
+  description: "Deep in the cultural heartlands of Gujarat, our journey began with master carvers, fragrant raw teakwood logs, and hand chisels passed through generations.",
+  detailedStory: "Before modern computer-aided design or industrialized joinery, our lineage took form in humble wooden workshops. Each log was selected by hand for its grain density and seasonal curing, governed by the time-honored principles of indigenous Indian manufacturing.",
+  image: "/THE BEGINNING.jpeg",
+  craftFocus: ["Aged Teak Selection", "Classical Hand Chisels", "Indigenous Joinery"],
+  locationTag: "Ahmedabad Craft Quarter"
+},
   {
     step: "02",
     era: "The Heritage",
@@ -103,7 +103,7 @@ export const JOURNEY_MILESTONES: JourneyMilestone[] = [
     category: "Craft Guild",
     description: "Four decades of dedicated practice refining temple sanctums, traditional Gujarati haveli ornamentation, and sacred geometry.",
     detailedStory: "The workshop developed mastery in multi-layered relief carvings, floral arabesques, and intricate temple pillars. The generational knowledge of how wood breathes, responds to climate, and holds sacred energy became an instinctual heritage.",
-    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80",
+  image: "/heritage (2nd pic).jpeg",
     craftFocus: ["High-Relief Floral Carving", "Temple Shikhar Geometries", "Natural Oil Rubs"],
     locationTag: "Old Haveli manufacturing Tradition"
   },
@@ -115,7 +115,7 @@ export const JOURNEY_MILESTONES: JourneyMilestone[] = [
     category: "Identity",
     description: "Formalized as Vaastukalaa, creating bespoke traditional temples, royal swings (jhulas), carved jharokhas, and timeless heirloom furniture.",
     detailedStory: "Vaastukalaa became a revered destination for patrons seeking non-industrialized, museum-grade woodwork. From grand home mandirs with hand-turned sangeda columns to brass-accented swings, every creation preserved cultural soul in private residences.",
-    image: "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=1200&q=80",
+  image: "atelier (3rd pic).jpeg",
     craftFocus: ["Traditional Mandir Architecture", "Hand-Turned Sangeda", "Heirloom Jhulas"],
     locationTag: "Nana Chiloda Atelier"
   },
@@ -127,7 +127,7 @@ export const JOURNEY_MILESTONES: JourneyMilestone[] = [
     category: "Transition",
     description: "Recognizing that exquisite craft requires sympathetic architectural envelopes, the practice expanded into spatial planning, light, and materiality.",
     detailedStory: "As contemporary lifestyle evolved, clients desired spaces that were clean, breathable, and filled with natural daylight, yet without losing the warmth and sacred grounding of traditional Indian craft. The dialogue between architecture and artisanal woodwork began.",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+  image: "evolution (4th pic ).jpeg",
     craftFocus: ["Spatial Volume", "Natural Daylight Integration", "Vastu Shastra Alignments"],
     locationTag: "Studio Dialogue"
   },

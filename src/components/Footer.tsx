@@ -120,7 +120,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
             <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-[#3DCBA8] font-bold block mb-3">LOCATIONS</span>
             <div className="space-y-2 text-[11px] text-[#D4F0E8]">
               <div>
-                <span className="font-semibold text-white text-[10px]">Studio:</span>{' '}
+                <span className="font-semibold text-white text-[10px]">Office:</span>{' '}
                 306, Ishaan Square, Chandkheda, Ahmedabad
               </div>
               <div>

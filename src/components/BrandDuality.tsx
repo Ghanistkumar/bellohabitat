@@ -80,7 +80,7 @@ export const BrandDuality: React.FC = () => {
                     </h3>
                   </div>
                 </div>
-                <span className="text-xs font-mono text-[#007E70] font-bold">STUDIO</span>
+                <span className="text-xs font-mono text-[#007E70] font-bold">OFFICE</span>
               </div>
 
               <p className="text-sm italic text-[#007E70] font-semibold mb-4">
@@ -108,7 +108,7 @@ export const BrandDuality: React.FC = () => {
             </div>
 
             <div className="mt-8 pt-6 border-t border-[#D4F0E8] flex items-center justify-between text-xs text-[#4D756E]">
-              <span>Studio: Chandkheda, Ahmedabad</span>
+              <span>Office: Chandkheda, Ahmedabad</span>
               <span className="font-mono text-[#007E70] font-bold">DESIGN VISION</span>
             </div>
           </div>

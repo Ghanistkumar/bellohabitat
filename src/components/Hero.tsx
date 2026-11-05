@@ -148,7 +148,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation, onExploreJourney
             </div>
             <div className="border-l-2 border-[#02AE88] pl-3">
               <span className="block text-lg text-[#007E70] font-bold">Ahmedabad</span>
-              <span className="text-[10px] tracking-widest uppercase text-[#4D756E]">Studio & Atelier</span>
+              <span className="text-[10px] tracking-widest uppercase text-[#4D756E]">Office & Atelier</span>
             </div>
           </div>
 

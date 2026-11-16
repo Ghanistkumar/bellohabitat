@@ -581,25 +581,30 @@ export const PROJECTS_DATA: ProjectItem[] = [
     isFeatured: false
   },
   {
-    id: "heirloom-jhula-pavilion",
-    title: "The Royal Swarna Jhula Pavilion",
+    id: "the-urban-puff-new-ranip",
+    title: "The Urban Puff — A Fusion of Flavours",
     category: "TRADITIONAL CRAFT",
-    categoryLabel: "Heirloom Craft & Custom Woodwork",
+    categoryLabel: "Modern Café & Food Experience",
     division: "Vaastukalaa",
-    location: "Gandhinagar Residence, Gujarat",
-    year: "2023",
-    heroImage: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1400&q=80",
+    location: "New Ranip, Ahmedabad, Gujarat",
+    year: "2026",
+    heroImage: "trad2.jpeg",
     gallery: [
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=1200&q=80"
+      "traditional1.jpeg",
+      "trade3.jpeg",
+      "trade4.jpeg"
     ],
-    shortDescription: "A museum-grade suspended teakwood jhula with intricate peacock finials, sangeda turned pillars, and antique cast brass links.",
-    idea: "Commissioned as an heirloom wedding gift destined to be passed down through generations within a prominent Gujarat family.",
-    designApproach: "Designed to anchor a double-height courtyard, visible from both ground-floor living areas and first-floor gallery corridors.",
-    craftsmanship: "Each curved backrest is chiseled from a single block of mature CP Teak, sealed with organic beeswax without toxic synthetic coats.",
-    materials: ["Selected CP Sagwan (Teak)", "Hand-Forged Brass Peacock Chains", "Natural Velvet Upholstery", "Beeswax Sealant"],
-    dimensionsOrArea: "Bespoke 7ft x 3.5ft Heirloom",
+    shortDescription: "The Urban Puff is a vibrant food destination bringing together delicious fusion puffs, creative flavours, and a welcoming café experience.",
+    idea: "Created to offer a unique food experience where traditional Indian flavours meet modern culinary creativity, making every visit memorable.",
+    designApproach: "Focused on creating an inviting and comfortable space where customers can enjoy a variety of freshly prepared fusion puffs, snacks, and refreshing beverages.",
+    craftsmanship: "Every puff is crafted with carefully selected ingredients, fresh fillings, and distinctive flavour combinations, delivering quality and taste in every bite.",
+    materials: [
+      "Freshly Prepared Puff Pastry",
+      "Premium Quality Ingredients",
+      "Signature Fusion Fillings",
+      "Fresh Chutneys & Seasonings"
+    ],
+    dimensionsOrArea: "The Urban Puff — New Ranip Outlet",
     isFeatured: true
   },
   {
@@ -610,10 +615,10 @@ export const PROJECTS_DATA: ProjectItem[] = [
     division: "Vaastukalaa",
     location: "Heritage Quarter, Ahmedabad",
     year: "2023",
-    heroImage: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1400&q=80",
+    heroImage: "step3.jpeg",
     gallery: [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80"
+      "step7.jpeg",
+      "step4.jpeg"
     ],
     shortDescription: "A masterwork wooden jharokha featuring operable micro-fretwork shutters, stepped cornice brackets, and hand-finished antique brass studs.",
     idea: "Restoration and adaptation of traditional Pol house architectural elements into a luxury contemporary penthouse feature wall.",

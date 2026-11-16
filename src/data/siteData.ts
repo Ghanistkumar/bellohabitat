@@ -400,7 +400,7 @@ export const CRAFT_STAGES: CraftStage[] = [
     description: "We work primarily with sustainably sourced Central Indian Teak (CP Sagwan), Burma Teak, and indigenous Sheesham. Every timber beam is naturally seasoned to reach optimal moisture equilibrium, preventing warping across Ahmedabad's dry summers and humid monsoons.",
     tooling: "Moisture meters, timber grain calipers, traditional grading hand-planes",
     materiality: "Seasoned CP Teakwood, Indian Rosewood, Sheesham",
-    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80"
+    image: "step1.jpeg"
   },
   {
     id: "design-study",
@@ -410,7 +410,7 @@ export const CRAFT_STAGES: CraftStage[] = [
     description: "Before a single chisel touches wood, the proportions are mapped on full-scale 1:1 paper stencils. Sacred Vastu alignments, Golden Ratio proportions, and structural joinery calculations are verified between our architects and master craftsmen.",
     tooling: "1:1 Drafting stencils, compass dividers, CAD coordination overlays",
     materiality: "Architectural blueprint vellum, graphite, geometric grids",
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80"
+    image: "step3.jpeg"
   },
   {
     id: "carving",
@@ -420,7 +420,7 @@ export const CRAFT_STAGES: CraftStage[] = [
     description: "Our artisans utilize over twenty distinct hand-ground gouges and chisels. The process begins with deep roughing cuts, followed by multi-tiered relief carving where intricate floral vines, temple kalash motifs, and geometric fretwork emerge from the solid wood.",
     tooling: "Tempered carbon steel chisels, buffalo-horn mallets, curvature gouges",
     materiality: "Solid heartwood block, natural wood fibers",
-    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80"
+    image: "step2.jpeg"
   },
   {
     id: "detail-joinery",
@@ -430,7 +430,7 @@ export const CRAFT_STAGES: CraftStage[] = [
     description: "We reject superficial nails and flimsy screws in core structural elements. Instead, our atelier adheres to classical mortise-and-tenon, sliding dovetails, and pegged joints that accommodate wood's natural micro-movement without ever fracturing.",
     tooling: "Japanese pull saws, rebate planes, precision wooden marking gauges",
     materiality: "Interlocking timber tenons, wooden dowels, brass alignment pins",
-    image: "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=1200&q=80"
+    image: "step4.jpeg"
   },
   {
     id: "finishing",
@@ -440,7 +440,7 @@ export const CRAFT_STAGES: CraftStage[] = [
     description: "Finishing is never about encasing wood in synthetic plastic film. We meticulously hand-sand through ascending grit grades, applying natural beeswax, linseed rubs, and low-VOC breathable PU lacquers that enhance the natural golden luminescence of the teak grain.",
     tooling: "Natural horsehair buffing brushes, linen rags, micro-mesh sanders",
     materiality: "Carnauba wax, cold-pressed linseed oil, matte architectural sealant",
-    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=80"
+    image: "step7.jpeg"
   },
   {
     id: "space-installation",
@@ -450,7 +450,7 @@ export const CRAFT_STAGES: CraftStage[] = [
     description: "The culmination: the finished architectural woodwork or temple sanctum is carefully transported and installed into its bespoke residential or commercial setting, perfectly aligned with lighting, floor finishes, and architectural sightlines.",
     tooling: "Laser leveling systems, concealed structural anchors, micro-adjusters",
     materiality: "Finished habitation, ambient illumination, sacred space",
-    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80"
+    image: "steo8.jpeg"
   }
 ];
 
@@ -479,41 +479,41 @@ export const PROJECTS_DATA: ProjectItem[] = [
     isFeatured: true
   },
   {
-  id: "sanctum-of-light-mandir",
-  title: "Sanctum of Light — Bespoke Home Mandir",
-  category: "TEMPLES",
-  categoryLabel: "Traditional Sacred Architecture",
-  division: "Vaastukalaa",
-  location: "Sindhu Bhavan Road, Ahmedabad",
-  year: "2023",
+    id: "sanctum-of-light-mandir",
+    title: "Sanctum of Light — Bespoke Home Mandir",
+    category: "TEMPLES",
+    categoryLabel: "Traditional Sacred Architecture",
+    division: "Vaastukalaa",
+    location: "Sindhu Bhavan Road, Ahmedabad",
+    year: "2023",
 
-  heroImage: "temples1.jpeg",
+    heroImage: "temples1.jpeg",
 
-  gallery: [
-    "/temples2.jpeg",
-    "/temples3.jpeg",
-    "/temples4.jpeg",
-    // "/images/projects/sanctum-of-light/04.jpg"
-  ],
+    gallery: [
+      "/temples2.jpeg",
+      "/temples3.jpeg",
+      "/temples4.jpeg",
+      // "/images/projects/sanctum-of-light/04.jpg"
+    ],
 
-  shortDescription: "A temple sanctum sculpted in pure white Makrana marble and hand-carved sagwan timber, with recessed 24k gold leaf accents and sacred Shilpa Shastra proportions.",
+    shortDescription: "A temple sanctum sculpted in pure white Makrana marble and hand-carved sagwan timber, with recessed 24k gold leaf accents and sacred Shilpa Shastra proportions.",
 
-  idea: "A devotional haven created within a luxury penthouse, requiring seamless acoustic isolation from the urban buzz while generating an immediate sense of divine quietude.",
+    idea: "A devotional haven created within a luxury penthouse, requiring seamless acoustic isolation from the urban buzz while generating an immediate sense of divine quietude.",
 
-  designApproach: "Vastu orientations dictated the Northeast placement. The sanctum balances floating minimalist stone pedestals with a handcrafted stepped ceiling dome (shikhar) carved entirely in the Vaastukalaa workshop.",
+    designApproach: "Vastu orientations dictated the Northeast placement. The sanctum balances floating minimalist stone pedestals with a handcrafted stepped ceiling dome (shikhar) carved entirely in the Vaastukalaa workshop.",
 
-  craftsmanship: "Over 600 hours of artisanal hand-carving produced the continuous floral fretwork frieze and lotus medallion, illuminated by soft concealed 2700K warm LED light.",
+    craftsmanship: "Over 600 hours of artisanal hand-carving produced the continuous floral fretwork frieze and lotus medallion, illuminated by soft concealed 2700K warm LED light.",
 
-  materials: [
-    "Solid Sagwan (Teakwood)",
-    "Makrana Pristine White Marble",
-    "Hand-Beaten Brass Bells",
-    "24K Gold Leaf Inlay"
-  ],
+    materials: [
+      "Solid Sagwan (Teakwood)",
+      "Makrana Pristine White Marble",
+      "Hand-Beaten Brass Bells",
+      "24K Gold Leaf Inlay"
+    ],
 
-  dimensionsOrArea: "320 sq.ft Sanctum",
-  isFeatured: true
-},
+    dimensionsOrArea: "320 sq.ft Sanctum",
+    isFeatured: true
+  },
   {
     id: "the-serene-duplex-interior",
     title: "The Earth & Ash Modern Duplex",

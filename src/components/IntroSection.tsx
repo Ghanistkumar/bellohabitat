@@ -48,7 +48,7 @@ export const IntroSection: React.FC<IntroSectionProps> = ({ onOpenConsultation, 
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div className="flex items-center gap-3.5">
                   <div className="w-12 h-12 bg-[#007E70] text-white flex items-center justify-center font-bold text-xl border-2 border-[#02AE88] shadow-sm">
-                    45+
+                    54+
                   </div>
                   <div>
                     <span className="text-xs uppercase tracking-[0.2em] font-bold text-[#007E70] block">

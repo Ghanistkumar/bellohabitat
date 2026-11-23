@@ -54,7 +54,7 @@ export const DesignPhilosophy: React.FC = () => {
         </div>
 
         {/* Editorial Footnote Banner */}
-        <div className="mt-14 p-6 sm:p-8 bg-[#EDF9F6] border border-[#B8E6DB] flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
+        {/* <div className="mt-14 p-6 sm:p-8 bg-[#EDF9F6] border border-[#B8E6DB] flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
           <div className="text-center md:text-left">
             <span className="text-[10px] font-mono uppercase tracking-[0.24em] text-[#02AE88] font-bold block mb-1">
               REGIONAL ARCHITECTURAL CONTEXT
@@ -69,7 +69,7 @@ export const DesignPhilosophy: React.FC = () => {
             </span>
             <span className="text-[11px] text-[#4D756E]">Latitude 23.0225° N</span>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

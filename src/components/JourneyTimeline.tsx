@@ -27,6 +27,120 @@ export const JourneyTimeline: React.FC = () => {
       <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-[#007E70]/10 rounded-full blur-3xl pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Welcome / About the Studio */}
+        <div id="about-studio" className="mb-24 sm:mb-32">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+            <div className="lg:col-span-8">
+              <div className="flex items-center gap-3 mb-5">
+                <span className="w-8 h-[2px] bg-[#02AE88]" />
+                <span className="text-xs uppercase tracking-[0.28em] text-[#007E70] font-bold">
+                  WELCOME TO OUR STUDIO
+                </span>
+              </div>
+
+              <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-[#007E70] tracking-tight leading-[1.08] mb-7">
+                BELLO HABITAT 
+                <span className="block italic font-light text-[#02AE88]">
+                  COSULTANCY
+                </span>
+              </h2>
+
+              <p className="text-sm sm:text-base text-[#1C4039] leading-relaxed mb-5">
+                Practising since 2014, we are a multidisciplinary design studio
+                based in Ahmedabad, Gujarat, India. Our team brings together
+                architects, interior designers, landscape architects, furniture
+                designers and product designers to create thoughtful spaces and
+                meaningful design experiences.
+              </p>
+
+              <p className="text-sm sm:text-base text-[#1C4039] leading-relaxed mb-5">
+                At BELLO HABITAT COSULTANCY, we strive to deliver considered
+                solutions across architecture, interior design, landscape design,
+                furniture design and product design. Our experience spans
+                architecture and interior projects, landscaping, renovation,
+                Vaastu suggestions, wooden crafts and bespoke product design.
+              </p>
+
+              <p className="text-sm sm:text-base text-[#1C4039] leading-relaxed mb-8">
+                Understanding our clients—their expressed and unexpressed needs—
+                remains at the heart of our work. We believe the best outcomes
+                come from listening carefully, bringing diverse ideas together
+                and shaping them into a cohesive design.
+              </p>
+
+              <div className="border-l-4 border-[#02AE88] bg-[#EDF9F6] px-5 sm:px-7 py-5 mb-8">
+                <span className="block text-[10px] uppercase tracking-[0.22em] text-[#007E70] font-bold mb-2">
+                  THE MEANING BEHIND OUR NAME
+                </span>
+                <p className="text-lg sm:text-xl text-[#007E70] font-semibold leading-snug mb-2">
+                  “BELLO” means Incredible and “HABITAT” means Architecture.
+                </p>
+                <p className="text-sm sm:text-base text-[#1C4039] italic">
+                  Together, BELLO HABITAT represents the Incredible Architecture.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xs uppercase tracking-[0.2em] text-[#007E70] font-bold mb-4">
+                  OUR DESIGN DISCIPLINES
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    "Architecture Design",
+                    "Interior Design",
+                    "Landscape Design",
+                    "Furniture Design",
+                    "Product Design",
+                    "Vaastu Suggestions",
+                    "Wooden Crafts",
+                    "Renovation"
+                  ].map((item) => (
+                    <span
+                      key={item}
+                      className="text-xs sm:text-sm px-3 py-2 bg-white border border-[#B8E6DB] text-[#007E70] font-medium"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Founder portrait and attribution */}
+            <aside className="lg:col-span-4 lg:pt-10">
+              <div className="max-w-md ml-auto">
+                <div className="border border-[#B8E6DB] bg-white p-2.5 shadow-lg">
+                  <div className="aspect-[4/5] overflow-hidden bg-[#EDF9F6]">
+                    <img
+                      src="HM.png"
+                      alt="Himanshu P Mewada, Founder and Director of Vaastukalaa Design Studio"
+                      className="w-full h-full object-cover object-center"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <div className="text-right mt-5">
+                  <p className="text-xl sm:text-2xl font-semibold tracking-tight text-[#007E70]">
+                    Himanshu P Mewada
+                  </p>
+                  <p className="text-xs sm:text-sm uppercase tracking-[0.2em] text-[#02AE88] font-bold mt-1">
+                    Founder, Director
+                  </p>
+                  <span className="block w-12 h-[2px] bg-[#02AE88] ml-auto mt-4" />
+                </div>
+              </div>
+            </aside>
+          </div>
+
+          <div className="mt-12 sm:mt-16 pt-7 border-t border-[#D4F0E8]">
+            <p className="max-w-4xl text-sm sm:text-base text-[#1C4039] leading-relaxed">
+              Architecture is a collaborative process. Different disciplines,
+              services, factors and ideas come together as one entity to create
+              thoughtful, functional and enduring design.
+            </p>
+          </div>
+        </div>
+
         {/* Section Header */}
         <div className="max-w-3xl mb-12 sm:mb-16">
           <div className="flex items-center gap-3 mb-4">

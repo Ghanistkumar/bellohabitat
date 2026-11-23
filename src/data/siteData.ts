@@ -759,25 +759,25 @@ export const WHY_US_PILLARS = [
 export const TESTIMONIAL_PLACEHOLDERS = [
   {
     id: "quote-1",
-    clientLabel: "[Client Testimonial — Private Residence Patron]",
+    clientLabel: "Anandbhai K. Kanojia (Assoc.Vice President at Intas)",
     projectType: "Bespoke Bungalow Architecture & Custom Mandir",
-    location: "Bopal-Ambli, Ahmedabad",
-    quote: "The seamless integration between Bello Habitat's modern architectural vision and Vaastukalaa's traditional wood carving was unlike anything we experienced with other firms. Our home feels simultaneously contemporary and deeply grounded in our ancestral heritage.",
+    location: "Krishna Bungalows 1, Motera, Ahmedabad",
+    quote: "BelloHc is the best decision we made for our home interior and renovation. Himanshu is just superb with neat concepts, inspirational space designs and home design experience. The most impressive part of Himanshu is; his client-oriented approach and design process was all about our needs, attention to the smallest detail, 100% quality in everything. I strongly recommend BelloHc if you expect worry-free and interior services with high commitments.",
     note: "Verified client feedback will replace this editorial placeholder."
   },
   {
     id: "quote-2",
-    clientLabel: "[Client Testimonial — Penthouse Interior Client]",
+    clientLabel: "Er. Sahilbhai Patel (Entrepreneur)",
     projectType: "Luxury Duplex Interior & Heirloom Jhula",
-    location: "Sindhu Bhavan Road, Ahmedabad",
-    quote: "Visiting their Nana Chiloda workshop and seeing our handcrafted teakwood swing and mandir carved before our eyes gave us immense appreciation for true Indian craftsmanship. Their PMC team managed the entire execution flawlessly.",
+    location: "Shyam Puja-4, TP-44, Chandkheda",
+    quote: "We were very happy with our experience with Bello Habitat. We enjoyed the broad selection of products that helped to fit our unique style. Team Bello Hc was responsive and matched our taste exactly.",
     note: "Verified client feedback will replace this editorial placeholder."
   },
   {
     id: "quote-3",
-    clientLabel: "[Client Testimonial — Commercial Space Director]",
+    clientLabel: "Mr. Royson Rajan (Co-Founder – Atlas Soft Web Pvt. Ltd.)",
     projectType: "Corporate Studio & Executive Millwork",
-    location: "SG Highway, Ahmedabad",
+    location: "Atlas Soft Web Pvt.Ltd., Chandkheda",
     quote: "Bello Habitat Consultancy understood how to marry corporate technological efficiency with warm, prestigious handcrafted woodwork. The attention to detailing, Vastu alignment, and acoustic performance exceeded our highest expectations.",
     note: "Verified client feedback will replace this editorial placeholder."
   }
